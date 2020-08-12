@@ -1,6 +1,6 @@
 .header {
 	background-color: #D8D8D8;
-	height:112px;
+	min-height:112px;
 }
 
 .stickers {
@@ -42,11 +42,6 @@
 	height: 352px;
 }
 
-.footer {
-	height: 186px;
-	background-color: #919191
-}
-
 .about {
 	padding-top: 39px;
 }
@@ -86,17 +81,28 @@
 		padding-top: 25px !important;
 }
 
+	.footer {
+	background-color: #919191
+}
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.gutterPadding {
 		padding-left:22px !important;
 		padding-right:22px !important;
 	}
 
+	.testImage{
+		width: 100%;
+		height: 350px;
+		padding-top: 55px;
+		padding-right: 21px;
+		padding-left: 21px;
+		padding-bottom: 67px;
+	}
+
 	.mobileGutter{
 		padding-left:22px !important;
 		padding-right:22px !important;
-		height: 688px;
 	}
 
 	.detailRow{
@@ -136,23 +142,20 @@
 		padding-left: 21px;
 	}
 
+	.mobileHeight{
+		height: 350px;
+	}
+
 	.insetImageContainerMobile{
 		height:336px;
 	}
 
-	.insetImageRight{
-		padding-top: 96px;
-		padding-left: 100px;
-		padding-right: 22px;
-		padding-bottom: 88px;
-	}
-
 	.whyCare{
-		height: 1096px;
+		
 	}
 
 	.howWeDoIt {
-		height: 832px;
+		
 		background-color: #D8D8D8;
 	}
 
@@ -160,12 +163,45 @@
 		height: 256px;
 	}
 
+	.imgClass {
+		max-height: 500px;
+		display:block;
+    	margin:auto;
+	}
+
+	.imgClass2 {
+		max-height: 500px;
+		display:block;
+    	margin:auto;
+	}
+
+	.insetImageRight{
+		padding-top: 55px;
+		padding-bottom: 67px;
+	}
+
+
 }
 
 @media (min-width: 768px) {
 	.gutterPadding {
 		padding-left:22px !important;
 		padding-right:22px !important;
+	}
+
+	.navPadding{
+		padding-left:69px; 
+	}
+
+	.footer {
+	height: 186px;
+	background-color: #919191
+}
+
+	.insetPadding {
+		padding-left: 100px;
+		padding-right: 135px;
+		padding-top: 104px;
 	}
 
 	.detailRow {
@@ -198,14 +234,12 @@
 		padding-top: 96px;
 		padding-right: 104px;
 		padding-left: 22px;
-		padding-bottom: 88px;
 	}
 
 	.insetImageRight{
 		padding-top: 96px;
 		padding-left: 100px;
 		padding-right: 22px;
-		padding-bottom: 88px;
 	}
 
 	.whyCare{
@@ -213,7 +247,6 @@
 	}
 
 	.howWeDoIt {
-		height: 832px;
 		background-color: #D8D8D8;
 	}
 
@@ -248,7 +281,6 @@
 	}
 
 	.howWeDoIt {
-		height: 744px;
 		background-color: #D8D8D8;
 	}
 
@@ -268,14 +300,22 @@
 		padding-top: 104px;
 		padding-right: 100px;
 		padding-left: 134px;
-		padding-bottom: 104px;
 	}
 
 	.insetImageRight{
 		padding-top: 104px;
 		padding-left: 100px;
 		padding-right: 135px;
-		padding-bottom: 200px;
+	}
+
+	.imgClass {
+		max-height: 500px;
+	}
+
+	.imgClass2 {
+		max-height: 400px;
+		display:block;
+    	margin:auto;
 	}
 
 	.whyCare{
