@@ -1,0 +1,294 @@
+.header {
+	background-color: #D8D8D8;
+	height:112px;
+}
+
+.stickers {
+	background-color: #D8D8D8;
+}
+
+.jumboStarter {
+	height:584px;
+}
+
+.titleText{
+		padding-top: 71px;
+		font-size: 32px;
+		line-height: 40px;
+		color: #111111;
+}
+
+.bullets{
+	margin-bottom: 10px;
+}
+
+.jumboImage{
+	background-image: url('../images/Mindfulness-Full.png');
+	background-size: 100% 100%;
+}
+
+.blankButton {
+		background-color: #919191;
+		width: 242px;
+		height: 64px;
+		text-align: center;
+		color: #111111;
+		font-size: 16px;
+		line-height: 64px;
+		font-weight: bold;
+}
+
+.exploreCandidates {
+	height: 352px;
+}
+
+.footer {
+	height: 186px;
+	background-color: #919191
+}
+
+.about {
+	padding-top: 39px;
+}
+
+.donate {
+	padding-top: 9px;
+}
+
+.footerText{
+	font-size: 16px;
+	color: #111111;
+	font-weight: bold;
+}
+
+.descriptionText{
+		padding-top: 25px;
+		color: #111111;
+		font-size: 16px;
+		line-height: 24px;
+}
+
+.claimButton {
+		margin-top: 40px;
+		background-color: #919191;
+		width: 242px;
+		height: 64px;
+		text-align: center;
+		color: #111111;
+		font-size: 16px;
+		line-height: 64px;
+		font-weight: bold;
+}
+
+
+
+.whyCareDescription {
+		padding-top: 25px !important;
+}
+
+
+@media (max-width: 767px) {
+	.gutterPadding {
+		padding-left:22px !important;
+		padding-right:22px !important;
+	}
+
+	.mobileGutter{
+		padding-left:22px !important;
+		padding-right:22px !important;
+		height: 688px;
+	}
+
+	.detailRow{
+		height: 848px;
+	}
+	.detailRowMobileHeight {
+		height: 424px;
+}
+
+	.jumboText {
+		padding-left: 22px !important;
+		padding-right: 22px !important;
+		font-size: 48px;
+		color: #111111;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		font-weight: bold;
+	}
+
+	.leftGutter {
+		padding-left:22px !important;
+	}
+
+	.rightGutter {
+		padding-right: 22px !important
+	}
+
+	.exploreButtonPadding{
+		padding-left: 22px !important;
+	}
+
+	.insetImageMobile{
+		padding-top: 24px;
+		padding-right: 21px;
+		padding-left: 21px;
+	}
+
+	.insetImageContainerMobile{
+		height:336px;
+	}
+
+	.insetImageRight{
+		padding-top: 96px;
+		padding-left: 100px;
+		padding-right: 22px;
+		padding-bottom: 88px;
+	}
+
+	.whyCare{
+		height: 1096px;
+	}
+
+	.howWeDoIt {
+		height: 832px;
+		background-color: #D8D8D8;
+	}
+
+	.candidates {
+		height: 256px;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.gutterPadding {
+		padding-left:22px !important;
+		padding-right:22px !important;
+	}
+
+	.detailRow {
+		height: 400px;
+}
+
+	.jumboText{
+		font-size: 48px;
+		color: #111111;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		font-weight: bold;
+		padding-right: 13px !important;
+}
+	.leftGutter {
+		padding-left:22px !important;
+	}
+
+	.rightGutter {
+		padding-right: 22px !important
+	}
+
+	.exploreButtonPadding{
+		padding-left: 22px !important;
+	}
+
+	.insetImageLeft{
+		padding-top: 96px;
+		padding-right: 104px;
+		padding-left: 22px;
+		padding-bottom: 88px;
+	}
+
+	.insetImageRight{
+		padding-top: 96px;
+		padding-left: 100px;
+		padding-right: 22px;
+		padding-bottom: 88px;
+	}
+
+	.whyCare{
+		height: 688px;
+	}
+
+	.howWeDoIt {
+		height: 832px;
+		background-color: #D8D8D8;
+	}
+
+	.candidates {
+		height: 256px;
+	}
+
+}
+
+@media (min-width: 992px) {
+	.gutterPadding {
+		padding-left:134px !important;
+		padding-right: 134px !important;
+	}
+
+	.explorePadding{
+		padding-left:134px !important;
+		padding-right: 134px !important;
+	}
+
+	.detailRow {
+		height: 400px;
+}
+
+	.candidates {
+	height: 344px;
+}
+
+	.jumboPadding{
+		padding-left:134px !important;
+		padding-right: 134px !important;
+	}
+
+	.howWeDoIt {
+		height: 744px;
+		background-color: #D8D8D8;
+	}
+
+	.leftGutter {
+		padding-left:134px !important;
+	}
+
+	.rightGutter {
+		padding-right: 134px !important
+	}
+
+	.stickerPadding {
+		padding-right: 100px !important;
+	}
+
+	.insetImageLeft{
+		padding-top: 104px;
+		padding-right: 100px;
+		padding-left: 134px;
+		padding-bottom: 104px;
+	}
+
+	.insetImageRight{
+		padding-top: 104px;
+		padding-left: 100px;
+		padding-right: 135px;
+		padding-bottom: 200px;
+	}
+
+	.whyCare{
+		height: 712px;
+	}
+
+	.whyCarePadding{
+		padding-right: 135px !important;
+	}
+
+	.whyCareTitle {
+		padding-top: 111px !important;
+	}
+
+
+}
