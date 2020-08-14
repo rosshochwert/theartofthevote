@@ -11,7 +11,7 @@ exports.handler = async function(event) {
 		return {
       statusCode: 200, // <-- Important!
       headers,
-      body: "This was not a POST request!"
+      body: "This was not a POST request 2!"
     };
   }
 
