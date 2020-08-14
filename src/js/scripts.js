@@ -1,57 +1,57 @@
 var stripe = Stripe("pk_test_51HFo77FL2039H5Ri4ovbl2tOvdsa1yhxoVRcJozYX1rsRv2KmYhSvgyNXvAO57CMw7QTxANJarZGTqpeNbscXCeW00DgsNrtjq");
 
 var payWithCard = function(stripe, card, clientSecret) {
-  loading(true);
-  stripe
-    .confirmCardPayment(clientSecret, {
-      payment_method: {
-        card: card
-      }
-    })
-    .then(function(result) {
-      if (result.error) {
+	loading(true);
+	stripe
+	.confirmCardPayment(clientSecret, {
+		payment_method: {
+			card: card
+		}
+	})
+	.then(function(result) {
+		if (result.error) {
         // Show error to your customer
         showError(result.error.message);
-      } else {
+    } else {
         // The payment succeeded!
         orderComplete(result.paymentIntent.id);
-      }
-    });
+    }
+});
 };
 
 var orderComplete = function(paymentIntentId) {
-  loading(false);
-  document
-    .querySelector(".result-message a")
-    .setAttribute(
-      "href",
-      "https://dashboard.stripe.com/test/payments/" + paymentIntentId
-    );
-  document.querySelector(".result-message").classList.remove("hidden");
-  document.querySelector("button").disabled = true;
+	loading(false);
+	document
+	.querySelector(".result-message a")
+	.setAttribute(
+		"href",
+		"https://dashboard.stripe.com/test/payments/" + paymentIntentId
+		);
+	document.querySelector(".result-message").classList.remove("hidden");
+	document.querySelector("button").disabled = true;
 };
 
 var showError = function(errorMsgText) {
-  loading(false);
-  var errorMsg = document.querySelector("#card-error");
-  errorMsg.textContent = errorMsgText;
-  setTimeout(function() {
-    errorMsg.textContent = "";
-  }, 4000);
+	loading(false);
+	var errorMsg = document.querySelector("#card-error");
+	errorMsg.textContent = errorMsgText;
+	setTimeout(function() {
+		errorMsg.textContent = "";
+	}, 4000);
 };
 
 // Show a spinner on payment submission
 var loading = function(isLoading) {
-  if (isLoading) {
+	if (isLoading) {
     // Disable the button and show a spinner
     document.querySelector("button").disabled = true;
     document.querySelector("#spinner").classList.remove("hidden");
     document.querySelector("#button-text").classList.add("hidden");
-  } else {
-    document.querySelector("button").disabled = false;
-    document.querySelector("#spinner").classList.add("hidden");
-    document.querySelector("#button-text").classList.remove("hidden");
-  }
+} else {
+	document.querySelector("button").disabled = false;
+	document.querySelector("#spinner").classList.add("hidden");
+	document.querySelector("#button-text").classList.remove("hidden");
+}
 };
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -91,12 +91,14 @@ document.addEventListener("DOMContentLoaded", function(){
       // Disable the Pay button if there are no card details in the Element
       document.querySelector("button").disabled = event.empty;
       document.querySelector("#card-error").textContent = event.error ? event.error.message : "";
-  	});
-    var form = document.getElementById("payment-form");
-    form.addEventListener("submit", function(event) {
-    	event.preventDefault();
+  });
+});
+	
+	var form = document.getElementById("payment-form");
+	form.addEventListener("submit", function(event) {
+		event.preventDefault();
       // Complete payment when the submit button is clicked
-      	payWithCard(stripe, card, data.clientSecret);
-    });
+      payWithCard(stripe, card, data.clientSecret);
+  });
 
 });
