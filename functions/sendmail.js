@@ -52,6 +52,7 @@ const headers = {
 
 exports.handler = async function(event) {
 
+  console.log("accessed")
   const body = JSON.parse(event.body)
   const name = body.name
   const email = body.email
