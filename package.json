@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "dependencies": {
-    "stripe": "^8.85.0",
+    "netlify-lambda": "^2.0.1",
+    "stripe": "^8.85.0"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
@@ -13,6 +14,7 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
+    "build": "netlify-lambda build functions",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
