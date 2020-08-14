@@ -2,4 +2,4 @@
 
 [build]
   publish = "src"
-  functions = "lambda"
+  functions = "lambda-src"
