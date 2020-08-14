@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		headers: {
 			"Content-Type": "application/json"
 		},
-		body: JSON.stringify(purchase)
+		body: {100}
 	})
 	.then(function(result) {
 		return result.json();
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(){
       document.querySelector("#card-error").textContent = event.error ? event.error.message : "";
   });
 });
-	
+
 	var form = document.getElementById("payment-form");
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
