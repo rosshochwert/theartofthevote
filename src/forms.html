@@ -22,11 +22,24 @@
 
 <body>
 
-  <form id="payment-form">
+<div class="row">
+  <div class="col" style="margin-top: 50px">
+  <form id="payment-form" netlify-honeypot="bot-field" data-netlify="true" class="container">
+<p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email : <input type="email" name="email" /></label>
+</p>
+<input type="file" name="file_upload" />
+  <input style="display:none;" name="bot-field" />
+  <p></p>
+
+
       <div id="card-element"><!--Stripe.js injects the Card Element--></div>
       <button id="submit">
         <div class="spinner hidden" id="spinner"></div>
-        <span id="button-text">Pay</span>
+        <span id="button-text">Send</span>
       </button>
       <p id="card-error" role="alert"></p>
       <p class="result-message hidden">
@@ -34,28 +47,8 @@
         <a href="" target="_blank">Stripe dashboard.</a> Refresh the page to pay again.
       </p>
     </form>
-
-<button>
-  Click to Buy! <strong>$10</strong>
-</button>
-
-<form name="contact" method="POST" netlify-honeypot="bot-field" type="file" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email : <input type="email" name="email" /></label>
-  </p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <input style="display:none;" name="bot-field" />
-  <p>
-    <p>
-      <input type="file" name="file_upload" />
-    </p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+  </div>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -1,4 +1,4 @@
-const stripe = require('stripe')(STRIPE_SECRET_KEY);
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const statusCode = 200;
 const headers = {
@@ -18,16 +18,19 @@ exports.handler = async function(event) {
   const data = JSON.parse(event.body);
 
   const paymentIntent = await stripe.paymentIntents.create({
-    amount: calculateOrderAmount(data),
+    amount: data,
     currency: "usd"
   });
 
+  let object = {
+    clientSecret: paymentIntent.client_secret
+  }
   return {
     statusCode: 200, // <-- Important!
       headers,
-      body: {
+      body: JSON.stringify({
         clientSecret: paymentIntent.client_secret
-      }
+      })
   }
 
 };
