@@ -56,7 +56,7 @@ var loading = function(isLoading) {
 
 document.addEventListener("DOMContentLoaded", function(){
 	document.querySelector("button").disabled = true;
-	fetch("/purchase", {
+	fetch("/.netlify/functions/purchase", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json"
