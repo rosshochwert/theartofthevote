@@ -39,6 +39,7 @@ var showError = function(errorMsgText) {
     errorMsg.textContent = "";
   }, 4000);
 };
+
 // Show a spinner on payment submission
 var loading = function(isLoading) {
   if (isLoading) {
