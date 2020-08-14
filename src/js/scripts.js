@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		headers: {
 			"Content-Type": "application/json"
 		},
-		body: {100}
+		body: 100 //need to define how much to purchase first duh
 	})
 	.then(function(result) {
 		return result.json();
