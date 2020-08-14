@@ -20,6 +20,7 @@ var payWithCard = function(stripe, card, clientSecret) {
 };
 
 var orderComplete = function(paymentIntentId) {
+	sendEmail(true)
     loading(false);
     document
         .querySelector(".result-message a")
@@ -54,6 +55,42 @@ var loading = function(isLoading) {
     }
 };
 
+var sendEmail = function(donation) {
+
+	var nameValue = document.getElementById("name").value;
+	var emailValue = document.getElementById("email").value;
+
+    fetch("/.netlify/functions/sendmail", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+            	name: nameValue,
+            	email: emailValue,
+            	donation: donation
+            }) //need to define how much to purchase first duh
+        })
+        .then(function(result) {
+            return result.json();
+        })
+        .then(function(data) {
+
+        })
+}
+
+function triggerBrowserValidation() {
+    // The only way to trigger HTML5 form validation UI is to fake a user submit
+    // event.
+    var submit = document.createElement('input');
+    var form = document.getElementById("payment-form");
+    submit.type = 'submit';
+    submit.style.display = 'none';
+    form.appendChild(submit);
+    submit.click();
+    submit.remove();
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("button").disabled = true;
     fetch("/.netlify/functions/purchase", {
@@ -67,7 +104,11 @@ document.addEventListener("DOMContentLoaded", function() {
             return result.json();
         })
         .then(function(data) {
-            var elements = stripe.elements();
+            var elements = stripe.elements({
+                fonts: [{
+                    cssSrc: 'https://fonts.googleapis.com/css?family=Roboto'
+                }]
+            });
             var style = {
                 base: {
                     color: "#32325d",
@@ -96,11 +137,30 @@ document.addEventListener("DOMContentLoaded", function() {
             });
 
             var form = document.getElementById("payment-form");
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        // Complete payment when the submit button is clicked
-        payWithCard(stripe, card, data.clientSecret);
-    });
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+                // Trigger HTML5 validation UI on the form if any of the inputs fail
+                // validation.
+                var plainInputsValid = true;
+                Array.prototype.forEach.call(form.querySelectorAll('input'), function(
+                    input
+                ) {
+                    if (input.checkValidity && !input.checkValidity()) {
+                        plainInputsValid = false;
+                        return;
+                    }
+                });
+
+                if (!plainInputsValid) {
+                    triggerBrowserValidation();
+                    return;
+                } else {
+                    payWithCard(stripe, card, data.clientSecret);
+                }
+
+                // Complete payment when the submit button is clicked
+            });
         });
 
 });

@@ -1,13 +1,48 @@
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-const msg = {
-  to: 'rosshochwert@gmail.com',
-  from: 'support@theartofthevote.com',
-  subject: 'Sending with Twilio SendGrid is Fun',
-  text: 'and easy to do anywhere, even with Node.js',
-  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-};
+const client = require('@sendgrid/client');
 
+client.setApiKey(process.env.SENDGRID_API_KEY);
+
+function sendWelcomeEmail(email, name, donation) {
+  template_id = 'd-54287736b4134ca386975f78d7a38bd4'
+  if (donation){
+    template_id = 'd-e785df7d137e49a08e15a855c70103dc'
+  }
+  return new Promise((fulfill, reject) => {
+    const data = {
+      from: {
+        email: "support@theartofthevote.com",
+        name: "Ross Hochwert"
+      },
+      reply_to: {
+        email: email
+      },
+      template_id: template_id,
+      personalizations: [
+        {
+          to: [{email: "rosshochwert@gmail.com"}],
+          dynamic_template_data: {
+            "name": name
+          }
+        }
+      ],
+    };
+
+    const request = {
+      method: "POST",
+      url: "/v3/mail/send",
+      body: data
+    };
+
+    client
+      .request(request)
+      .then(([response, body]) => {
+        console.log(response.statusCode);
+        console.log(body);
+        fulfill(response);
+      })
+      .catch(error => reject(error));
+  });
+}
 
 const statusCode = 200;
 const headers = {
@@ -16,21 +51,22 @@ const headers = {
 };
 
 exports.handler = async function(event) {
-/*	if (event.httpMethod !== "POST") {
-		return {
-      statusCode: 200, // <-- Important!
-      headers,
-      body: "This was not a POST request 3!"
-    };
-  }*/
 
-  sgMail.send(msg);
+  const body = JSON.parse(event.body)
+  const name = body.name
+  const email = body.email
+  const donation = body.donation
+
+  response = await sendWelcomeEmail(email, name, donation)
+
+  console.log(response)
 
   return {
     statusCode: 200, // <-- Important!
       headers,
       body: JSON.stringify({
-        "clientSecret": "success"
+        "response": response,
+        "email": "email"
       })
   }
 
