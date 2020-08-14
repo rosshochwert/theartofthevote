@@ -1,0 +1,35 @@
+{
+  "name": "theartofthevote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "stripe": "^8.85.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "netlify-lambda": "^2.0.1",
+    "uuid": "^8.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lambda-serve": "netlify-lambda serve lambda-src",
+    "lambda-build": "netlify-lambda build lambda-src",
+    "build": "NODE_ENV=production webpack && npm run lambda-build",
+    "dev": "NODE_ENV=development concurrently \"webpack-dev-server --content-base src/\" \"npm run lambda-serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosshochwert/theartofthevote.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosshochwert/theartofthevote/issues"
+  },
+  "homepage": "https://github.com/rosshochwert/theartofthevote#readme"
+}
