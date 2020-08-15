@@ -2,6 +2,9 @@ var stripe = Stripe("pk_test_51HFo77FL2039H5Ri4ovbl2tOvdsa1yhxoVRcJozYX1rsRv2KmY
 	maxNetworkRetries: 2
 });
 
+stripe.setMaxNetworkRetries(2);
+
+
 var payWithCard = function(stripe, card, clientSecret) {
     loading(true);
     stripe
