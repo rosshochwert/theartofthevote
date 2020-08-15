@@ -1,10 +1,3 @@
-var stripe = Stripe("pk_test_51HFo77FL2039H5Ri4ovbl2tOvdsa1yhxoVRcJozYX1rsRv2KmYhSvgyNXvAO57CMw7QTxANJarZGTqpeNbscXCeW00DgsNrtjq", {
-	maxNetworkRetries: 2
-});
-
-stripe.setMaxNetworkRetries(2);
-
-
 var payWithCard = function(stripe, card, clientSecret) {
     loading(true);
     stripe
@@ -91,6 +84,10 @@ function triggerBrowserValidation() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+	var stripe = Stripe("pk_test_51HFo77FL2039H5Ri4ovbl2tOvdsa1yhxoVRcJozYX1rsRv2KmYhSvgyNXvAO57CMw7QTxANJarZGTqpeNbscXCeW00DgsNrtjq", {
+		maxNetworkRetries: 2
+	});
+
     document.querySelector("button").disabled = true;
     fetch("/.netlify/functions/purchase", {
             method: "POST",

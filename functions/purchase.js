@@ -1,5 +1,7 @@
 const stripe = require('stripe')(process.env.STRIPE_SECRET_TEST_KEY);
 
+stripe.setMaxNetworkRetries(2);
+
 const statusCode = 200;
 const headers = {
 	"Access-Control-Allow-Origin" : "*",
