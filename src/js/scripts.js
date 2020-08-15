@@ -38,8 +38,8 @@ var sendToNetlify = function(){
 	    	document.querySelector("#submit").disabled = true;
 	    }, 
 	    error: function (request, status, error) {
-	    	alert('error')
-	    	console.log(error)
+	    	console.log(request)
+	    	console.log(status)
 	    }
 	});
 
