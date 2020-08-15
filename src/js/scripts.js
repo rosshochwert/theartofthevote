@@ -12,18 +12,16 @@ var payWithCard = function(stripe, card, clientSecret) {
                 showError(result.error.message);
             } else {
                 // The payment succeeded!
-                orderComplete(result.paymentIntent.id);
+                orderComplete(result.paymentIntent.id, true);
             }
         });
 };
 
-var orderComplete = function(paymentIntentId) {
-	sendEmail(true)
-    loading(false);
-	sendToNetlify()
+var orderComplete = function(paymentIntentId, donation) {
+	sendToNetlify(donation)
 };
 
-var sendToNetlify = function(){
+var sendToNetlify = function(donation){
 	var $form = $("#payment-form");
 	var form_data = new FormData($('#payment-form')[0]);
 	console.log("sending to netlify")
@@ -40,8 +38,14 @@ var sendToNetlify = function(){
         processData: false,
 	    success: function (data) {
 	        console.log(data);
-	        document.querySelector(".result-message").classList.remove("hidden");
+	        if (donation){
+	        	document.querySelector(".result-donate-message").classList.remove("hidden");
+	        } else {
+	        	document.querySelector(".result-no-donate-message").classList.remove("hidden");
+	        }
 	    	document.querySelector("#submit").disabled = true;
+	    	sendEmail(donation)
+
 	    }, 
 	    error: function (request, status, error) {
 	    	console.log(request)
@@ -192,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else if (document.getElementById("card-element").style.display == "block") {
                     payWithCard(stripe, card, data.clientSecret);
                 } else if (document.getElementById("card-element").style.display == "none") {
-                	sendToNetlify()
+                	sendToNetlify(false)
                 }
 
                 // Complete payment when the submit button is clicked
