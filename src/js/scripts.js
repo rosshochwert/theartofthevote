@@ -19,10 +19,19 @@ var payWithCard = function(stripe, card, clientSecret) {
 
 var orderComplete = function(paymentIntentId) {
 	sendEmail(true)
+	sendToNetlify()
     loading(false);
     document.querySelector(".result-message").classList.remove("hidden");
-    document.querySelector("button").disabled = true;
+    document.querySelector("#submit").disabled = true;
 };
+
+var sendToNetlify = function(){
+	var $form = $("#payment-form");
+  	$.post($form.attr("action"), $form.serialize()).then(function() {
+    	alert("sent to netlift");
+  	});
+}
+
 
 var showError = function(errorMsgText) {
     loading(false);
@@ -37,11 +46,11 @@ var showError = function(errorMsgText) {
 var loading = function(isLoading) {
     if (isLoading) {
         // Disable the button and show a spinner
-        document.querySelector("button").disabled = true;
+        document.querySelector("#submit").disabled = true;
         document.querySelector("#spinner").classList.remove("hidden");
         document.querySelector("#button-text").classList.add("hidden");
     } else {
-        document.querySelector("button").disabled = false;
+        document.querySelector("#submit").disabled = false;
         document.querySelector("#spinner").classList.add("hidden");
         document.querySelector("#button-text").classList.remove("hidden");
     }
@@ -88,7 +97,17 @@ document.addEventListener("DOMContentLoaded", function() {
 		maxNetworkRetries: 2
 	});
 
-    document.querySelector("button").disabled = true;
+	document.getElementById("GFY").addEventListener("touchstart", function(){
+		document.querySelector("#submit").disabled = false;
+		document.getElementById("card-element").style.display = "none"
+	})
+
+	document.getElementById("donateButton").addEventListener("touchstart", function(){
+		document.getElementById("card-element").style.display = "block"
+		document.querySelector("#submit").disabled = true;
+	})
+
+    document.querySelector("#submit").disabled = true;
     fetch("/.netlify/functions/purchase", {
             method: "POST",
             headers: {
@@ -128,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
             card.mount("#card-element");
             card.on("change", function(event) {
                 // Disable the Pay button if there are no card details in the Element
-                document.querySelector("button").disabled = event.empty;
+                document.querySelector("#submit").disabled = event.empty;
                 document.querySelector("#card-error").textContent = event.error ? event.error.message : "";
             });
 
@@ -151,8 +170,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (!plainInputsValid) {
                     triggerBrowserValidation();
                     return;
-                } else {
+                } else if (document.getElementById("card-element").style.display == "block") {
                     payWithCard(stripe, card, data.clientSecret);
+                } else if (document.getElementById("card-element").style.display == "none") {
+                	sendToNetlify()
                 }
 
                 // Complete payment when the submit button is clicked
