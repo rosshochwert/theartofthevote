@@ -25,12 +25,17 @@ var orderComplete = function(paymentIntentId) {
 
 var sendToNetlify = function(){
 	var $form = $("#payment-form");
-	console.log("sending to netlift")
-	$.ajax({
+	console.log("sending to netlify")
+	$.post($form.attr("action"), $form.serialize()).then(function() {
+    	alert("Thank you!");
+  	});
+
+/*	$.ajax({
 	    url: $form.attr("action"),
 	    type: 'post',
 	    data: $form.serialize(),
-	    contentType: false,
+	    //contentType: false,
+	    contentType: 'multipart/form-data',
         processData: false,
 	    success: function (data) {
 	        console.log(data);
@@ -41,7 +46,7 @@ var sendToNetlify = function(){
 	    	console.log(request)
 	    	console.log(status)
 	    }
-	});
+	});*/
 
 };
 

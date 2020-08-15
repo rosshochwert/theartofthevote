@@ -14,7 +14,7 @@
    <body>
       <div class="row mx-0">
          <div class="col" style="margin-top: 50px">
-            <form id="payment-form" netlify-honeypot="bot-field" data-netlify="true" class="container" enctype="multipart/form-data" name="payment-form2" method="POST">
+            <form id="payment-form" netlify-honeypot="bot-field" data-netlify="true" class="container" enctype="multipart/form-data" name="payment-form" method="POST">
                <p>
                   <label>Your Name: <input type="text" name="name" id="name" required/></label>   
                </p>
@@ -22,6 +22,7 @@
                   <label>Your Email : <input type="email" name="email" id="email" required/></label>
                </p>
                <input type="file" name="file_upload"/>
+               <input type="hidden" name="form-name" value="payment-form" />
                <input style="display:none;" name="bot-field" />
                <p style="padding-top:10px;text-align: center">Want to chip in to help us keep producing awesome stickers?</p>
                <div class="row">
