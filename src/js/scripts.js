@@ -25,17 +25,21 @@ var orderComplete = function(paymentIntentId) {
 
 var sendToNetlify = function(){
 	var $form = $("#payment-form");
-
+	console.log("sending to netlift")
 	$.ajax({
-	    url: $form.attr("action"),
+	    url: '/forms.html',
 	    type: 'post',
 	    data: $form.serialize(),
-	    headers: { "Content-Type": 'multipart/form-data; boundary=random' },
-	    dataType: 'json',
+	    contentType: false,
+        processData: false,
 	    success: function (data) {
-	        console.info(data);
+	        console.log(data);
 	        document.querySelector(".result-message").classList.remove("hidden");
 	    	document.querySelector("#submit").disabled = true;
+	    }, 
+	    error: function (request, status, error) {
+	    	alert('error')
+	    	console.log(error)
 	    }
 	});
 
