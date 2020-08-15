@@ -27,17 +27,19 @@ var sendToNetlify = function(){
 	var $form = $("#payment-form");
 
 	$.ajax({
-    url: $form.attr("action"),
-    type: 'post',
-    data: $form.serialize(),
-    headers: { "Content-Type": 'multipart/form-data; boundary=random' },
-    dataType: 'json',
-    success: function (data) {
-        console.info(data);
-        document.querySelector(".result-message").classList.remove("hidden");
-    	document.querySelector("#submit").disabled = true;
-    }
-});
+	    url: $form.attr("action"),
+	    type: 'post',
+	    data: $form.serialize(),
+	    headers: { "Content-Type": 'multipart/form-data; boundary=random' },
+	    dataType: 'json',
+	    success: function (data) {
+	        console.info(data);
+	        document.querySelector(".result-message").classList.remove("hidden");
+	    	document.querySelector("#submit").disabled = true;
+	    }
+	});
+
+};
 
 
 var showError = function(errorMsgText) {
