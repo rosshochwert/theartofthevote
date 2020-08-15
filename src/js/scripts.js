@@ -19,16 +19,16 @@ var payWithCard = function(stripe, card, clientSecret) {
 
 var orderComplete = function(paymentIntentId) {
 	sendEmail(true)
-	sendToNetlify()
     loading(false);
-    document.querySelector(".result-message").classList.remove("hidden");
-    document.querySelector("#submit").disabled = true;
+	sendToNetlify()
 };
 
 var sendToNetlify = function(){
 	var $form = $("#payment-form");
   	$.post($form.attr("action"), $form.serialize()).then(function() {
     	alert("sent to netlift");
+    	document.querySelector(".result-message").classList.remove("hidden");
+    	document.querySelector("#submit").disabled = true;
   	});
 }
 
