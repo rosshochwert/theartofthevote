@@ -25,17 +25,18 @@ var orderComplete = function(paymentIntentId) {
 
 var sendToNetlify = function(){
 	var $form = $("#payment-form");
+	var form_data = new FormData($('#payment-form')[0]);
 	console.log("sending to netlify")
-	$.post($form.attr("action"), $form.serialize()).then(function() {
+/*	$.post($form.attr("action"), $form.serialize()).then(function() {
     	alert("Thank you!");
-  	});
+  	});*/
 
-/*	$.ajax({
+	$.ajax({
 	    url: $form.attr("action"),
 	    type: 'post',
-	    data: $form.serialize(),
-	    //contentType: false,
-	    contentType: 'multipart/form-data',
+	    data: form_data,
+	    contentType: false,
+	    //contentType: 'multipart/form-data',
         processData: false,
 	    success: function (data) {
 	        console.log(data);
@@ -46,7 +47,7 @@ var sendToNetlify = function(){
 	    	console.log(request)
 	    	console.log(status)
 	    }
-	});*/
+	});
 
 };
 
