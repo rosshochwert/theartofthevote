@@ -19,7 +19,7 @@ function sendWelcomeEmail(email, name, donation) {
       template_id: template_id,
       personalizations: [
         {
-          to: [{email: "rosshochwert@gmail.com"}],
+          to: [{email: email}],
           dynamic_template_data: {
             "name": name
           }
