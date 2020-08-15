@@ -27,7 +27,7 @@ var sendToNetlify = function(){
 	var $form = $("#payment-form");
 	console.log("sending to netlift")
 	$.ajax({
-	    url: '/forms.html',
+	    url: $form.attr("action"),
 	    type: 'post',
 	    data: $form.serialize(),
 	    contentType: false,
