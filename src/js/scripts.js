@@ -25,12 +25,19 @@ var orderComplete = function(paymentIntentId) {
 
 var sendToNetlify = function(){
 	var $form = $("#payment-form");
-  	$.post($form.attr("action"), $form.serialize()).then(function() {
-    	alert("sent to netlift");
-    	document.querySelector(".result-message").classList.remove("hidden");
+
+	$.ajax({
+    url: $form.attr("action"),
+    type: 'post',
+    data: $form.serialize(),
+    headers: { "Content-Type": 'multipart/form-data; boundary=random' },
+    dataType: 'json',
+    success: function (data) {
+        console.info(data);
+        document.querySelector(".result-message").classList.remove("hidden");
     	document.querySelector("#submit").disabled = true;
-  	});
-}
+    }
+});
 
 
 var showError = function(errorMsgText) {
