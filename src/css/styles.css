@@ -1,10 +1,38 @@
 .header {
-	background-color: #D8D8D8;
+	background-color: #1A1B32 !important;
 	min-height:112px;
 }
 
+.headerFont{
+	font-size: 19px;
+	line-height: 24px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	color: #FFFFFF !important;
+	border-top: 2px solid #1A1B32 !important;
+	border-bottom: 2px solid #1A1B32 !important;
+}
+
+.headerFont:hover {
+    border-bottom: 2px solid #FFFFFF !important;
+}
+
+.headerFont:after {
+    transition: width 0.3s ease;
+    width: 100%;
+}
+
+.heroFont{
+	font-family: 'Patua One', cursive;
+	color: #FFFFFF;
+}
+
 .stickers {
-	background-color: #D8D8D8;
+	background-color: #EFEBE4;
+	overflow: hidden;
+}
+
+.howWeDoItBack{
+	background-color: #293B74;
 }
 
 .jumboStarter {
@@ -15,7 +43,16 @@
 		padding-top: 71px;
 		font-size: 32px;
 		line-height: 40px;
-		color: #111111;
+		color: #293B74;
+		font-family: 'Patua One', cursive;
+}
+
+.howTitleText{
+	padding-top: 71px;
+		font-size: 32px;
+		line-height: 40px;
+		color: #FFFFFF;
+		font-family: 'Patua One', cursive;
 }
 
 .bullets{
@@ -23,10 +60,21 @@
 }
 
 .jumboImage{
-	background-image: url('../images/Mindfulness-Full.png');
-	background-size: 100% 100%;
-}
+	background-image: url('../images/02_Homepage.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat; 
+	background-color: #293B74;
+	background-position: bottom left;
+/*	background-size: 100% 100%;
+*/}
 
+.candidateImage{
+	background-image: url('../images/06_Homepage.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat; 
+	background-color: #FFFFFF;
+	background-position: bottom center;
+}
 .blankButton {
 		background-color: #919191;
 		width: 242px;
@@ -58,27 +106,42 @@
 
 .descriptionText{
 		padding-top: 25px;
-		color: #111111;
+		color: #293B74;
 		font-size: 16px;
 		line-height: 24px;
+		font-family: 'Open Sans', sans-serif;
+}
+
+.howDescriptionText{
+	padding-top: 25px;
+		color: #FFFFFF;
+		font-size: 16px;
+		line-height: 24px;
+		font-family: 'Open Sans', sans-serif;
 }
 
 .claimButton {
 		margin-top: 40px;
-		background-color: #919191;
-		width: 242px;
-		height: 64px;
+		border-radius: 28px;
+		border: none; 
+		background-color: #ED6F4E;
+		width: 238px;
+		height: 56px;
 		text-align: center;
-		color: #111111;
-		font-size: 16px;
-		line-height: 64px;
-		font-weight: bold;
+		color: #FFFFFF;
+		font-size: 20px;
+		line-height: 56px;
+		font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 
 
 .whyCareDescription {
 		padding-top: 25px !important;
+		color: #293B74;
+		font-size: 16px;
+		line-height: 24px;
+		font-family: 'Open Sans', sans-serif;
 }
 
 	.footer {
@@ -86,6 +149,13 @@
 }
 
 @media (max-width: 768px) {
+	.conditionalBackground{
+		background-image: url('../images/02_Homepage.png');
+	background-size: auto 100%;
+	background-repeat: no-repeat; 
+	background-color: #293B74;
+	background-position: 75% 100%;
+	}
 	.gutterPadding {
 		padding-left:22px !important;
 		padding-right:22px !important;
@@ -113,15 +183,16 @@
 }
 
 	.jumboText {
-		padding-left: 22px !important;
-		padding-right: 22px !important;
-		font-size: 48px;
-		color: #111111;
+		padding-left: 150px !important;
+		padding-right: 5px !important;
+		padding-bottom: 304px !important;
 		display: flex;
 		justify-content: center;
 		align-content: center;
 		flex-direction: column;
-		font-weight: bold;
+		font-size: 42px;
+		line-height: 48px;
+		color: #FFFFFF;
 	}
 
 	.leftGutter {
@@ -155,12 +226,13 @@
 	}
 
 	.howWeDoIt {
-		
+		min-height: 808px;
+
 		background-color: #D8D8D8;
 	}
 
 	.candidates {
-		height: 256px;
+		min-height: 256px;
 	}
 
 	.imgClass {
@@ -170,9 +242,10 @@
 	}
 
 	.imgClass2 {
-		max-height: 500px;
+		max-height: 400px;
 		display:block;
     	margin:auto;
+    	margin-bottom: 40px;
 	}
 
 	.insetImageRight{
@@ -184,6 +257,12 @@
 }
 
 @media (min-width: 768px) {
+	.stickerImage{
+		position:absolute !important; 
+		bottom:0 !important; 
+		max-height:350px !important;
+	}
+
 	.gutterPadding {
 		padding-left:22px !important;
 		padding-right:22px !important;
@@ -191,6 +270,12 @@
 
 	.navPadding{
 		padding-left:69px; 
+	}
+
+	.imgClass2 {
+		width: 400px;
+		padding-top: 112px;
+		padding-left: 100px;
 	}
 
 	.footer {
@@ -209,14 +294,14 @@
 }
 
 	.jumboText{
-		font-size: 48px;
-		color: #111111;
 		display: flex;
 		justify-content: center;
 		align-content: center;
 		flex-direction: column;
 		font-weight: bold;
 		padding-right: 13px !important;
+		font-size: 50px;
+		line-height: 56px;
 }
 	.leftGutter {
 		padding-left:22px !important;
@@ -237,9 +322,9 @@
 	}
 
 	.insetImageRight{
-		padding-top: 96px;
+		/*padding-top: 96px;
 		padding-left: 100px;
-		padding-right: 22px;
+		padding-right: 22px;*/
 	}
 
 	.whyCare{
@@ -251,12 +336,25 @@
 	}
 
 	.candidates {
-		height: 256px;
+		min-height: 256px;
 	}
 
 }
 
 @media (min-width: 992px) {
+
+	.eatTheRich{
+		background-image: url('../images/03_Homepage.png');
+		background-size: auto 100%;
+		background-repeat: no-repeat; 
+	/*background-color: #293B74;*/
+	background-position: bottom center;
+	}
+
+	.stickerImage{
+		padding-left: 70px;
+	}
+
 	.gutterPadding {
 		padding-left:134px !important;
 		padding-right: 134px !important;
@@ -275,13 +373,12 @@
 	height: 344px;
 }
 
-	.jumboPadding{
-		padding-left:134px !important;
+	.jumboText{
 		padding-right: 134px !important;
 	}
 
 	.howWeDoIt {
-		background-color: #D8D8D8;
+		background-color: #293B74;
 	}
 
 	.leftGutter {
@@ -303,23 +400,23 @@
 	}
 
 	.insetImageRight{
-		padding-top: 104px;
+		/*padding-top: 104px;
 		padding-left: 100px;
 		padding-right: 135px;
-	}
+*/	}
 
 	.imgClass {
 		max-height: 500px;
 	}
 
 	.imgClass2 {
-		max-height: 400px;
-		display:block;
-    	margin:auto;
+		width: 400px;
+		padding-top: 112px;
+		margin-left: 200px;
 	}
 
 	.whyCare{
-		height: 712px;
+		min-height: 712px;
 	}
 
 	.whyCarePadding{

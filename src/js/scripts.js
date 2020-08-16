@@ -24,7 +24,6 @@ var orderComplete = function(paymentIntentId, donation) {
 var sendToNetlify = function(donation){
 	var $form = $("#payment-form");
 	var form_data = new FormData($('#payment-form')[0]);
-	console.log("sending to netlify")
 /*	$.post($form.attr("action"), $form.serialize()).then(function() {
     	alert("Thank you!");
   	});*/
@@ -37,13 +36,13 @@ var sendToNetlify = function(donation){
 	    //contentType: 'multipart/form-data',
         processData: false,
 	    success: function (data) {
-	        console.log(data);
 	        if (donation){
 	        	document.querySelector(".result-donate-message").classList.remove("hidden");
 	        } else {
 	        	document.querySelector(".result-no-donate-message").classList.remove("hidden");
 	        }
 	    	document.querySelector("#submit").disabled = true;
+	    	loading(false);
 	    	sendEmail(donation)
 
 	    }, 
@@ -120,12 +119,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		maxNetworkRetries: 2
 	});
 
-	document.getElementById("GFY").addEventListener("click", function(){
+	document.getElementById("GFY").addEventListener("click touch", function(){
 		document.querySelector("#submit").disabled = false;
 		document.getElementById("card-element").style.display = "none"
 	})
 
-	document.getElementById("donateButton").addEventListener("click", function(){
+	document.getElementById("donateButton").addEventListener("click touch", function(){
 		document.getElementById("card-element").style.display = "block"
 		document.querySelector("#submit").disabled = true;
 	})

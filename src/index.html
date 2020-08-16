@@ -11,14 +11,17 @@
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=Open+Sans&family=Patua+One&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark header gutterPadding">
-    <a class="navbar-brand" href="#">LOGO</a>
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark header gutterPadding">
+    <a class="navbar-brand" href="#">
+      <img src="/images/01_Homepage.png" width="151" height="35" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,13 +29,13 @@
       <ul class="mr-auto"></ul>
       <ul class="navbar-nav">
         <li class="nav-item navPadding">
-          <a class="nav-link" href="#">How We Do It</a>
+          <a class="nav-link headerFont" href="#">How We Do It</a>
         </li>
         <li class="nav-item navPadding">
-          <a class="nav-link" href="#">The Candidates</a>
+          <a class="nav-link headerFont" href="#">The Candidates</a>
         </li>
         <li class="nav-item navPadding">
-          <a class="nav-link" href="#">Claim Your Swag</a>
+          <a class="nav-link headerFont" href="#">Claim Your Swag</a>
         </li>
       </ul>
     </div>
@@ -41,13 +44,13 @@
   <div class="header">
     
   </div>
-  <div class="jumboStarter jumboPadding">
-    <div class="row mx-0 h-100 jumboImage" >
-      <div class="col-lg col-md-5 p-0 col d-sm-none d-md-block">
+  <div class="jumboStarter">
+    <div class="row mx-0 h-100">
+      <div class="col-lg col-md-5 p-0 col d-sm-none d-md-block jumboImage">
 
       </div>
-      <div class="col-lg col-md-7 col-sm-12 p-0 jumboText">
-        <span class="jumboText">Tagline goes here lorem ipsum dolor sit amet</span>
+      <div class="col-lg col-md-7 col-sm-12 p-0 jumboText conditionalBackground" style="background-color: #293B74">
+        <span class="heroFont jumboText">Tagline goes here lorem ipsum dolor sit amet</span>
       </div>
     </div>
   </div>
@@ -62,19 +65,20 @@
           Donate $20 and we’ll send you some cool stickers! Slap ‘em on your water bottle or laptop, but show off your Democratic pride.
         </div>
         <div class="claimButton">
-          Get Your Stickers
+          GET YOUR STICKERS
         </div>
       </div>
     </div>
-    <div class="col-lg col-md jumboImage detailRowMobileHeight">
-      Image 
+    <div class="col-lg col-md h-100 p-0 stickers">
+      <img src="images/03_Homepage.png" class="img-fluid mx-auto stickerImage"/>
+      </div>
     </div>
   </div>
 
   <div class="row mx-0 whyCare">
     <div class="col-lg col-md p-0">
       <div class="h-100 insetImageLeft">
-        <img src="images/Mindfulness-Full.png" class="img-fluid imgClass"/>
+        <img src="images/04_Homepage.png" class="img-fluid imgClass"/>
       </div>
     </div>
     <div class="col-lg col-md p-0">
@@ -98,36 +102,38 @@
   </div>
 
   <div class="row mx-0 howWeDoIt">
-    <div class="col-lg col-md p-0 h-100 stickers">
+    <div class="col-lg col-md p-0 h-100 howWeDoItBack">
       <div class="leftGutter mobileGutter">
-        <div class="titleText">
+        <div class="howTitleText">
           How We Do It
         </div>
-        <div class="descriptionText">
+        <div class="howDescriptionText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="descriptionText">
+        <div class="howDescriptionText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class="claimButton">
+        <button class="claimButton">
           Learn More
-        </div>
+        </button>
+        <div style="height: 112px;"></div>
       </div>
     </div>
-    <div class="col-lg col-md h-100 p-0">
-      <div class="h-100 insetImageRight">
-        <img src="images/Mindfulness-Full.png" class="img-fluid imgClass2"/>
-      </div>
+    <div class="col-lg col-md p-0 howWeDoItBack">
+        <img src="images/05_Homepage.png" class="imgClass2"/>
     </div>
   </div>
 
   <div class="row mx-0 candidates">
-    <div class="col-lg col-md-8 p-0">
+    <div class="col-lg-8 col-md-8 p-0">
       <div class="leftGutter">
         <div class="titleText">The Candidates</div>
         <div class="descriptionText">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </div>
+        <div class="claimButton" style="width:328px;">
+        EXPLORE THE CANDIDATES
+      </div>
       </div>
     </div>
     <div class="col-lg p-0 d-sm-none d-md-block">
@@ -135,11 +141,9 @@
   </div>
 
   <div class="row mx-0 exploreCandidates explorePadding">
-    <div class="col jumboImage p-0">
+    <div class="col candidateImage p-0">
       <div class="exploreButtonPadding">
-      <div class="blankButton">
-        Explore the Candidates
-      </div>
+      
     </div>
     </div>
   </div>
@@ -165,7 +169,6 @@
   </div>
 
   <script src="js/scripts.js"></script>
-  <script src="./bundle.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
