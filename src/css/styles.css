@@ -87,7 +87,7 @@
 }
 
 .exploreCandidates {
-	height: 352px;
+	/*min-height: 352px;*/
 }
 
 .about {
@@ -149,12 +149,25 @@
 }
 
 @media (max-width: 768px) {
+
+	.explorePadding{
+		margin-top:10% !important;
+	}
+
+	.mobilepadding{
+		height: 50px;
+	}
+
+	.stickerImage{
+		padding-left: 30px !important; 
+	}
+
 	.conditionalBackground{
 		background-image: url('../images/02_Homepage.png');
-	background-size: auto 100%;
-	background-repeat: no-repeat; 
-	background-color: #293B74;
-	background-position: 75% 100%;
+		background-size: auto 80%;
+		background-repeat: no-repeat; 
+		background-color: #293B74;
+		background-position: 0% 100%;
 	}
 	.gutterPadding {
 		padding-left:22px !important;
@@ -176,14 +189,14 @@
 	}
 
 	.detailRow{
-		height: 848px;
+		min-height: 500px;
 	}
 	.detailRowMobileHeight {
 		height: 424px;
 }
 
 	.jumboText {
-		padding-left: 150px !important;
+		padding-left: 50% !important;
 		padding-right: 5px !important;
 		padding-bottom: 304px !important;
 		display: flex;
@@ -233,9 +246,13 @@
 
 	.candidates {
 		min-height: 256px;
+		padding-right: 	10px;
 	}
 
 	.imgClass {
+		padding-top: 40px;
+		padding-right: 20px;
+		padding-left: 20px;
 		max-height: 500px;
 		display:block;
     	margin:auto;
@@ -256,7 +273,18 @@
 
 }
 
+@media (max-width: 500px) {
+	.conditionalBackground{
+		background-image: url('../images/02_Homepage.png');
+		background-size: auto 80%;
+		background-repeat: no-repeat; 
+		background-color: #293B74;
+		background-position: 85% 100%;
+	}
+}
+
 @media (min-width: 768px) {
+
 	.stickerImage{
 		position:absolute !important; 
 		bottom:0 !important; 
@@ -269,7 +297,7 @@
 	}
 
 	.navPadding{
-		padding-left:69px; 
+		padding-left:40px; 
 	}
 
 	.imgClass2 {
@@ -361,8 +389,8 @@
 	}
 
 	.explorePadding{
-		padding-left:134px !important;
-		padding-right: 134px !important;
+		padding-left:10% !important;
+		padding-right: 10% !important;
 	}
 
 	.detailRow {
@@ -374,7 +402,7 @@
 }
 
 	.jumboText{
-		padding-right: 134px !important;
+		padding-right: 15% !important;
 	}
 
 	.howWeDoIt {
@@ -382,11 +410,11 @@
 	}
 
 	.leftGutter {
-		padding-left:134px !important;
+		padding-left:15% !important;
 	}
 
 	.rightGutter {
-		padding-right: 134px !important
+		padding-right: 15% !important
 	}
 
 	.stickerPadding {
@@ -396,7 +424,7 @@
 	.insetImageLeft{
 		padding-top: 104px;
 		padding-right: 100px;
-		padding-left: 134px;
+		padding-left: 15%;
 	}
 
 	.insetImageRight{
@@ -407,12 +435,13 @@
 
 	.imgClass {
 		max-height: 500px;
+		padding-left: 10%;
 	}
 
 	.imgClass2 {
 		width: 400px;
 		padding-top: 112px;
-		margin-left: 200px;
+		margin-left: 20%;
 	}
 
 	.whyCare{
@@ -420,7 +449,7 @@
 	}
 
 	.whyCarePadding{
-		padding-right: 135px !important;
+		padding-right: 15% !important;
 	}
 
 	.whyCareTitle {
