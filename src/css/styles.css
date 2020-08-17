@@ -8,17 +8,6 @@
 	line-height: 24px;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	color: #FFFFFF !important;
-	border-top: 2px solid #1A1B32 !important;
-	border-bottom: 2px solid #1A1B32 !important;
-}
-
-.headerFont:hover {
-    border-bottom: 2px solid #FFFFFF !important;
-}
-
-.headerFont:after {
-    transition: width 0.3s ease;
-    width: 100%;
 }
 
 .heroFont{
@@ -99,9 +88,23 @@
 }
 
 .footerText{
-	font-size: 16px;
-	color: #111111;
-	font-weight: bold;
+	font-size: 19px;
+	color: #FFFFFF;
+	line-height: 24px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-align: center;
+}
+
+.supportEmail{
+	color: #FFFFFF;
+		font-size: 16px;
+		line-height: 24px;
+		font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+		background-color: #1A1B32
+
 }
 
 .descriptionText{
@@ -144,11 +147,42 @@
 		font-family: 'Open Sans', sans-serif;
 }
 
-	.footer {
-	background-color: #919191
-}
+	.discalimer{
+		border: 1px solid #FFFFFF;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		line-height: 24px;
 
+	}
 @media (max-width: 768px) {
+	.leftMobileGutter{
+		padding-left: 22px;
+	}
+	.navbar-collapse {
+		background-color: #355ABC;
+	}
+
+	.navbar {
+		padding: 0 !important;
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+
+	.mobileLast{
+		margin-bottom: 20px;
+	}
+
+	.stackMe{
+		flex-direction: column !important;
+	}
+
+	.learnMorePadding {
+		height: 60px
+	}
 
 	.explorePadding{
 		margin-top:10% !important;
@@ -169,9 +203,8 @@
 		background-color: #293B74;
 		background-position: 0% 100%;
 	}
-	.gutterPadding {
-		padding-left:22px !important;
-		padding-right:22px !important;
+	.toggler {
+		 margin-right: 22px;
 	}
 
 	.testImage{
@@ -284,7 +317,26 @@
 }
 
 @media (min-width: 768px) {
+	.headerFont:hover {
+    border-bottom: 2px solid #FFFFFF !important;
+}
 
+.headerFont:after {
+    transition: width 0.3s ease;
+    width: 100%;
+}
+
+.headerFont{
+	border-top: 2px solid #1A1B32 !important;
+	border-bottom: 2px solid #1A1B32 !important;
+}
+
+	.stackMe{
+		flex-direction: row !important;
+	}
+	.learnMorePadding {
+		height: 120px
+	}
 	.stickerImage{
 		position:absolute !important; 
 		bottom:0 !important; 
@@ -307,8 +359,8 @@
 	}
 
 	.footer {
-	height: 186px;
-	background-color: #919191
+	min-height: 186px;
+	background-color: #1A1B32
 }
 
 	.insetPadding {
