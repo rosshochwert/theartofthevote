@@ -458,7 +458,8 @@
 }
 
 	.jumboText{
-		padding-right: 15% !important;
+/*		padding-right: 15% !important;
+*/		max-width: 675px;
 	}
 
 	.howWeDoIt {
