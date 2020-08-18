@@ -431,6 +431,10 @@
 	background-position: bottom center;
 	}
 
+	.fakeColumn{
+		min-width: 	600px;
+	}
+
 	.stickerImage{
 		padding-left: 70px;
 	}
@@ -450,7 +454,7 @@
 }
 
 	.candidates {
-	height: 344px;
+	min-height: 344px;
 }
 
 	.jumboText{
@@ -462,7 +466,7 @@
 	}
 
 	.leftGutter {
-		padding-left:15% !important;
+		padding-left:10% !important;
 	}
 
 	.rightGutter {
@@ -470,13 +474,13 @@
 	}
 
 	.stickerPadding {
-		padding-right: 100px !important;
+		padding-right: 10% !important;
 	}
 
 	.insetImageLeft{
 		padding-top: 104px;
 		padding-right: 100px;
-		padding-left: 15%;
+		padding-left: 0px;
 	}
 
 	.insetImageRight{
