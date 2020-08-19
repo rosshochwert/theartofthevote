@@ -317,6 +317,10 @@
 }
 
 @media (min-width: 768px) {
+
+	.nonMobilePadding{
+		padding-top: 48px;
+	}
 	.headerFont:hover {
     border-bottom: 2px solid #FFFFFF !important;
 }
