@@ -3,6 +3,14 @@
 	min-height:112px;
 }
 
+.newIcon{
+	background-image: url('../images/Hamburger Menu@2x.png') !important;
+}
+
+.hider{
+	border: none !important;
+}
+
 .headerFont{
 	font-size: 19px;
 	line-height: 24px;
