@@ -49,7 +49,7 @@
 }
 
 .jumboImage{
-	background-image: url('../images/02_Homepage.png');
+	background-image: url('../images/02_Homepage_V2.png');
 	background-size: 100% auto;
 	background-repeat: no-repeat; 
 	background-color: #293B74;
@@ -197,7 +197,7 @@
 	}
 
 	.conditionalBackground{
-		background-image: url('../images/02_Homepage.png');
+		background-image: url('../images/02_Homepage_v2.png');
 		background-size: auto 80%;
 		background-repeat: no-repeat; 
 		background-color: #293B74;
@@ -308,7 +308,7 @@
 
 @media (max-width: 500px) {
 	.conditionalBackground{
-		background-image: url('../images/02_Homepage.png');
+		background-image: url('../images/02_Homepage_v2.png');
 		background-size: auto 80%;
 		background-repeat: no-repeat; 
 		background-color: #293B74;
@@ -321,19 +321,21 @@
 	.nonMobilePadding{
 		padding-top: 48px;
 	}
-	.headerFont:hover {
-    border-bottom: 2px solid #FFFFFF !important;
-}
+	.headerFont:hover, .claimButtonText:hover {
+    	border-bottom: 4px solid #ED6F4E !important;
+	}
 
-.headerFont:after {
-    transition: width 0.3s ease;
-    width: 100%;
-}
+	.headerFont:after, .claimButtonText:after {
+    	transition: width 0.3s ease;
+    	width: 100%;
+	}
 
-.headerFont{
-	border-top: 2px solid #1A1B32 !important;
-	border-bottom: 2px solid #1A1B32 !important;
-}
+	.headerFont{
+		border-top: 4px solid #1A1B32 !important;
+		border-bottom: 4px solid #1A1B32 !important;
+		padding-top: 0.1rem !important;
+		padding-bottom: 0.1rem !important;
+	}
 
 	.stackMe{
 		flex-direction: row !important;
@@ -412,7 +414,7 @@
 	}
 
 	.whyCare{
-		height: 688px;
+		min-height: 688px;
 	}
 
 	.howWeDoIt {
