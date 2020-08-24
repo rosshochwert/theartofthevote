@@ -3,6 +3,11 @@
 	min-height:112px;
 }
 
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .newIcon{
 	background-image: url('../images/Hamburger Menu@2x.png') !important;
 }
