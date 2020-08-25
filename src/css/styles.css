@@ -26,6 +26,7 @@
 .heroFont{
 	font-family: 'Patua One', cursive;
 	color: #FFFFFF;
+	font-weight: 400 !important;
 }
 
 .stickers {
@@ -459,13 +460,13 @@
 	}
 
 	.gutterPadding {
-		padding-left:134px !important;
-		padding-right: 134px !important;
+		padding-left:130px !important;
+		padding-right: 130px !important;
 	}
 
 	.explorePadding{
-		padding-left:10% !important;
-		padding-right: 10% !important;
+		padding-left:115px !important;
+		padding-right: 115px !important;
 	}
 
 	.detailRow {
@@ -486,15 +487,15 @@
 	}
 
 	.leftGutter {
-		padding-left:10% !important;
+		padding-left:115px !important;
 	}
 
 	.rightGutter {
-		padding-right: 15% !important
+		padding-right: 115px !important
 	}
 
 	.stickerPadding {
-		padding-right: 10% !important;
+		padding-right: 115px !important;
 	}
 
 	.insetImageLeft{
@@ -511,7 +512,7 @@
 
 	.imgClass {
 		max-height: 500px;
-		padding-left: 10%;
+		padding-left: 115px;
 	}
 
 	.imgClass2 {

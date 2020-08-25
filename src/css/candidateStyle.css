@@ -1,0 +1,26 @@
+.candidateHeroText{
+	font-family: 'Patua One', cursive;
+	color: #FFFFFF;
+	font-size: 42px;
+	line-height: 48px;
+	padding-top: 124px;
+}
+
+
+@media (min-width: 992px) {
+	.podium {
+		width: 400px;
+		/*padding-top: 112px;*/
+		margin-left: 20%;
+		position: absolute !important;
+    	bottom: 0 !important;
+	}
+
+	.podiumText {
+		min-height: 560px !important;
+	}
+
+	.podiumPadding{
+		padding-bottom: 50px;
+	}
+}
