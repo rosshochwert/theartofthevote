@@ -6,6 +6,39 @@
 	padding-top: 124px;
 }
 
+.candidateTitle{
+	font-family: 'Patua One';
+	color: #293B74;
+	font-size: 24px;
+	line-height: 40px;
+	height: 100px;
+	padding-top: 24px;
+	padding-bottom: 24px;	
+}
+
+.candidateText {
+	color: #293B74;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+	.dumbImage{
+		width: 	100%;
+		/*height: 360px;*/
+		background-color: grey;
+	}
+
+@media (max-width: 768px){
+	.podium {
+		width: 400px;
+		/*padding-top: 112px;*/
+	}
+
+	.rightGutterMobile{
+		padding-right: 22px;
+	}
+}
 
 @media (min-width: 992px) {
 	.podium {
@@ -17,10 +50,11 @@
 	}
 
 	.podiumText {
-		min-height: 560px !important;
+		min-height: 576px !important;
 	}
 
 	.podiumPadding{
 		padding-bottom: 50px;
 	}
+
 }
