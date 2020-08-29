@@ -29,14 +29,29 @@
 		background-color: grey;
 	}
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 	.podium {
-		width: 400px;
-		/*padding-top: 112px;*/
+		width: 100%;
 	}
 
 	.rightGutterMobile{
 		padding-right: 22px;
+	}
+
+	.howWeDoIt {
+		min-height: 720px;
+	}
+
+}
+
+
+@media (min-width: 768px){
+	.podium {
+		width: 100%;
+		/*padding-top: 112px;*/
+
+		position: absolute !important;
+    	bottom: 0 !important;
 	}
 }
 
