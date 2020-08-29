@@ -119,12 +119,12 @@ document.addEventListener("DOMContentLoaded", function() {
 		maxNetworkRetries: 2
 	});
 
-	document.getElementById("GFY").addEventListener("click touch", function(){
+	document.getElementById("GFY").addEventListener("click", function(){
 		document.querySelector("#submit").disabled = false;
 		document.getElementById("card-element").style.display = "none"
 	})
 
-	document.getElementById("donateButton").addEventListener("click touch", function(){
+	document.getElementById("donateButton").addEventListener("click", function(){
 		document.getElementById("card-element").style.display = "block"
 		document.querySelector("#submit").disabled = true;
 	})
