@@ -1,0 +1,36 @@
+.weightImage{
+	background-image: url('../images/Scale@2x.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat; 
+	background-color: #4AA6A4;
+	background-position: bottom;
+}
+
+.scale{
+	position: absolute !important;
+    bottom: 0 !important;
+    width:100%;
+}
+
+.headline{
+	min-height: 340px;
+}
+
+.chartImage{
+	max-height: 336px;
+}
+
+@media (max-width: 767px) {
+	.conditionalHeight {
+		min-height: 440px;
+		padding-top: 100px;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.chartImage {
+		padding-top: 107px;
+		height: 100%;	
+	}
+}

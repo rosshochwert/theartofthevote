@@ -390,7 +390,7 @@
 	}
 
 	.detailRow {
-		height: 400px;
+		min-height: 400px;
 }
 
 	.jumboText{
@@ -470,7 +470,7 @@
 	}
 
 	.detailRow {
-		height: 400px;
+		min-height: 400px;
 }
 
 	.candidates {
