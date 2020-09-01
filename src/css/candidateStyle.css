@@ -29,6 +29,17 @@
 		background-color: grey;
 	}
 
+.safeText{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 19px;
+	line-height: 24px;
+	color: #293B74;
+	padding-bottom: 15px;
+	text-decoration: underline;
+	text-decoration-color:  #293B74;
+	text-transform: uppercase;
+}
+
 @media (max-width: 767px){
 	.podium {
 		width: 100%;
@@ -52,6 +63,10 @@
 
 		position: absolute !important;
     	bottom: 0 !important;
+	}
+
+	.podiumPadding{
+		padding-bottom: 75px;
 	}
 }
 
