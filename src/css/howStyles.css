@@ -20,17 +20,66 @@
 	max-height: 336px;
 }
 
+.greenBullets {
+	list-style: none; /* Remove default bullets */
+}
+.greenBullets::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #4AA6A4; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 @media (max-width: 767px) {
 	.conditionalHeight {
 		min-height: 440px;
 		padding-top: 100px;
 	}
+
+}
+
+@media (min-width:  400px){
+	.chartImage {
+		margin-top: 30%;
+		height: 100%;	
+	}
+
+	.resourcePadding{
+		padding-left:22px;
+	}
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 	.chartImage {
-		padding-top: 107px;
+		margin-top: 30px;
 		height: 100%;	
 	}
+
+	.podium{
+		width: 100%;
+		margin-left: 0 !important
+	}
+
+	.resourcePadding{
+		padding-left: 44px;
+	}
+}
+
+.register {
+	min-height: 776px;
+}
+
+.moreResources {
+	padding-top: 55px;
+	color: #FFF;
+	font-size: 24px;
+	line-height: 40px;
+	font-family: 'Patua One', cursive;
+}
+
+.whiteFont {
+	color:#FFF;
 }
