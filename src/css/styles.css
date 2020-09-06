@@ -46,6 +46,10 @@ a.claimButtonText:hover {
 	color: #FFFFFF !important;
 }
 
+.noUnder:hover{
+	text-decoration: none !important;
+}
+
 .heroFont{
 	font-family: 'Patua One', cursive;
 	color: #FFFFFF;
@@ -193,7 +197,7 @@ a.claimButtonText:hover {
 		text-align: center;
 		font-size: 12px;
 		font-family: 'Open Sans', sans-serif;
-		line-height: 24px;
+		line-height: 36px;
 
 	}
 @media (max-width: 767px) {

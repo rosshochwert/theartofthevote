@@ -29,7 +29,7 @@
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1.25em; /* Also needed for space (tweak if needed) */
 }
 
 @media (max-width: 767px) {
@@ -38,16 +38,24 @@
 		padding-top: 100px;
 	}
 
+	.chartImage {
+		margin-bottom: 100px;
+		height: 100%;
+	}
+	.moreResources{
+		padding: 20px;
+	}
 }
 
 @media (min-width:  400px){
 	.chartImage {
 		margin-top: 30%;
-		height: 100%;	
+		height: 100%;
 	}
 
 	.resourcePadding{
-		padding-left:22px;
+		padding-left:11px;
+		padding-right:11px;
 	}
 }
 
@@ -59,12 +67,14 @@
 	}
 
 	.podium{
-		width: 100%;
+		width: 90%;
 		margin-left: 0 !important
 	}
 
 	.resourcePadding{
 		padding-left: 44px;
+		padding-right: 44px;
+		max-width: 500px;
 	}
 }
 
