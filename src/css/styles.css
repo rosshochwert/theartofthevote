@@ -197,7 +197,8 @@ a.claimButtonText:hover {
 		text-align: center;
 		font-size: 12px;
 		font-family: 'Open Sans', sans-serif;
-		line-height: 36px;
+		line-height: 48px;
+		width: 80%;
 
 	}
 @media (max-width: 767px) {
