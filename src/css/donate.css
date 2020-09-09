@@ -15,10 +15,23 @@
 
 .rectangle {
   height: 696px;
-  width: 428px;
+  width: 90%;
+  max-width: 428px;
   border-radius: 10px;
   background-color: #FFFFFF;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.14);
+}
+
+.donateButton{
+    border-radius: 28px;
+    border: none; 
+    background-color: #ED6F4E;
+    width: 80%;
+    height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .formPadding{
@@ -31,7 +44,7 @@
 .formFun{
 	box-sizing: border-box;
   height: 40px;
-  width: 372px;
+  max-width: 372px;
   border: 1px solid #DBDBDB;
   border-radius: 5px;
   margin-top: 15px;
@@ -43,11 +56,49 @@
 
 .labels {
   height: 24px;
-  width: 100px;
   color: #293B74;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 24px;
+}
+
+.thanksChip{
+  color: #293B74;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.dollarButton{
+  height: 40px;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.inputDollar {
+  text-align: right;
+  color: #293B74;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.dollarPosition{
+  position: absolute;
+  color: #293B74;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 40px;
+  padding-left: 10px;
 }

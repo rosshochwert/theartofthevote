@@ -13,13 +13,13 @@
   border-radius: 4px;
   background-color: white;
 
-  box-shadow: 0 1px 3px 0 #e6ebf1;
+  /*box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
-  transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;*/
 }
 
 .StripeElement--focus {
-  box-shadow: 0 1px 3px 0 #cfd7df;
+  /*box-shadow: 0 1px 3px 0 #cfd7df;*/
 }
 
 .StripeElement--invalid {
@@ -30,26 +30,7 @@
   background-color: #fefde5 !important;}
 
   /* Variables */
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  justify-content: center;
-  align-content: center;
-  height: 100vh;
-  width: 100vw;
-}
-form {
-  width: 30vw;
-  align-self: center;
-  box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
-    0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
-  border-radius: 7px;
-  padding: 40px;
-}
+
 input {
   border-radius: 6px;
   margin-bottom: 6px;
@@ -80,18 +61,23 @@ input {
   margin-top: 12px;
 }
 #card-element {
-  border-radius: 4px 4px 0 0 ;
-  padding: 12px;
-  border: 1px solid rgba(50, 50, 93, 0.1);
+/*  border-radius: 4px 4px 0 0 ;
+*/  padding: 12px;
+  border: 1px solid #DBDBDB;
   height: 44px;
   width: 100%;
   background: white;
+    /*width: 30vw;*/
+  align-self: center;
+  /*box-shadow: 0 5px 10px 0 rgba(0,0,0,0.14);*/
+  border-radius: 5px;
+  background-color: #FFFFFF;
 }
 #payment-request-button {
   margin-bottom: 32px;
 }
 /* Buttons and links */
-button {
+/*button {
   background: #5469d4;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -105,7 +91,7 @@ button {
   transition: all 0.2s ease;
   box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
   width: 100%;
-}
+}*/
 button:hover {
   filter: contrast(115%);
 }
@@ -183,6 +169,6 @@ button:disabled {
 }
 @media only screen and (max-width: 600px) {
   form {
-    width: 80vw;
+    /*width: 80vw;*/
   }
 }
