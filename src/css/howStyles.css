@@ -39,7 +39,6 @@
 	}
 
 	.chartImage {
-		margin-bottom: 100px;
 		height: 100%;
 	}
 	.moreResources{
@@ -62,7 +61,7 @@
 
 @media (min-width: 769px) {
 	.chartImage {
-		margin-top: 30px;
+		margin-top: 111px;
 		height: 100%;	
 	}
 

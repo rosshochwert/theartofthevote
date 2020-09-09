@@ -14,29 +14,25 @@
 }
 
 @media (max-width: 767px) {
-.logoAbout{
-	height: 168px;
-	margin-bottom: 60px; 
-}
+	.logoAbout{
+		height: 168px;
+	}
 }
 
 @media (min-width: 768px) {
-.logoAbout{
-	height: 168px;
-	margin-top: 100px; 
-}
+	.logoAbout{
+		height: 168px;
+		margin-top: 100px; 
+	}
+	.missionText{
+		padding-top: 111px !important;
+	}
+
 }
 
-.missionText{
-	padding-top: 100px !important;
-}
 
 .artistRow{
-	min-height: 400px;
-}
-
-.involved{
-	min-height: 472px;
+	
 }
 
 .involveText{

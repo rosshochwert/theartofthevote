@@ -70,7 +70,7 @@ a.claimButtonText:hover {
 }
 
 .titleText{
-		padding-top: 71px;
+		padding-top: 111px;
 		font-size: 32px;
 		line-height: 40px;
 		color: #293B74;
@@ -78,7 +78,7 @@ a.claimButtonText:hover {
 }
 
 .howTitleText{
-	padding-top: 71px;
+	padding-top: 111px;
 		font-size: 32px;
 		line-height: 40px;
 		color: #FFFFFF;
@@ -89,9 +89,7 @@ a.claimButtonText:hover {
 	margin-bottom: 10px;
 }
 
-.infoBox {
-	padding-top: 107px;
-}
+
 .jumboImage{
 	background-image: url('../images/02_Homepage_V2.png');
 	background-size: 100% auto;
@@ -153,6 +151,7 @@ a.claimButtonText:hover {
 
 .descriptionText{
 		padding-top: 25px;
+		padding-right: 15px;
 		color: #293B74;
 		font-size: 16px;
 		line-height: 24px;
@@ -161,6 +160,7 @@ a.claimButtonText:hover {
 
 .howDescriptionText{
 	padding-top: 25px;
+	padding-right: 15px;
 		color: #FFFFFF;
 		font-size: 16px;
 		line-height: 24px;
@@ -193,15 +193,49 @@ a.claimButtonText:hover {
 
 	.discalimer{
 		border: 1px solid #FFFFFF;
+		padding: 10px;
 		color: #FFFFFF;
 		text-align: center;
 		font-size: 12px;
 		font-family: 'Open Sans', sans-serif;
-		line-height: 48px;
-		width: 80%;
+		line-height: 24px;
+	}
+
+	.mobileImagePadding{
+		height: 111px;
 	}
 
 @media (max-width: 767px) {
+	.infoBox {
+	padding-top: 40px;
+}
+	.candidateBottomPadding{
+		height: 40px
+	}
+	.titleText{
+		padding-top: 40px;
+		font-size: 32px;
+		line-height: 40px;
+		color: #293B74;
+		font-family: 'Patua One', cursive;
+	}
+
+	.howTitleText{
+	padding-top: 40px;
+		font-size: 32px;
+		line-height: 40px;
+		color: #FFFFFF;
+		font-family: 'Patua One', cursive;
+}
+
+.rossOtherClass {
+	padding-top: 80px;
+}
+
+	.mobileImagePadding{
+		height: 80px;
+	}
+
 	.leftMobileGutter{
 		padding-left: 22px;
 	}
@@ -230,7 +264,8 @@ a.claimButtonText:hover {
 	}
 
 	.explorePadding{
-		margin-top:10% !important;
+		/*margin-top:10% !important;*/
+		margin-top:71px !important;
 	}
 
 	.mobilepadding{
@@ -318,8 +353,6 @@ a.claimButtonText:hover {
 
 	.howWeDoIt {
 		min-height: 808px;
-
-		background-color: #D8D8D8;
 	}
 
 	.candidates {
@@ -362,6 +395,14 @@ a.claimButtonText:hover {
 }
 
 @media (min-width: 768px) {
+
+	.infoBox {
+	padding-top: 111px;
+}
+
+	.candidateBottomPadding{
+		height: 111px
+	}
 
 	.nonMobilePadding{
 		padding-top: 48px;
@@ -472,6 +513,12 @@ a.claimButtonText:hover {
 
 }
 
+@media(min-width: 767px) {
+		.explorePadding{
+		padding-top: 71px !important;
+	}
+}
+
 @media (min-width: 992px) {
 
 	.eatTheRich{
@@ -498,6 +545,7 @@ a.claimButtonText:hover {
 	.explorePadding{
 		padding-left:115px !important;
 		padding-right: 115px !important;
+		padding-top: 71px !important;
 	}
 
 	.detailRow {
