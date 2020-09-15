@@ -224,6 +224,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("optionalDonation").style.display = "block"
         document.getElementById ("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = true;
+        document.getElementById("button-text").textContent = "DONATE"
+
     })
 
     document.getElementById("sorryMessedUp").addEventListener("click", function(event) {
@@ -231,10 +233,18 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("optionalDonation").style.display = "none"
         document.getElementById("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = false;
+        document.getElementById("button-text").textContent = "DONATE"
     })
 
     document.getElementById("nothistimeButton").addEventListener("click", function(event) {
         event.preventDefault()
+        document.getElementById("submit").disabled = false;
+        document.getElementById("submitDonateButton").style.display = "block"
+        document.getElementById("optionalDonation").style.display = "none"
+
+        document.getElementById("button-text").textContent = "SUBMIT"
+
+
     });
 
 

@@ -103,7 +103,7 @@
       <div class="d-flex justify-content-center">
         <div class="rectangle">
           <div class="formPadding">
-            <form id="payment-form" netlify-honeypot="bot-field" data-netlify="true" name="payment-form" method="POST">
+            <form id="payment-form" netlify-honeypot="bot-field" enctype='multipart/form-data' data-netlify="true" name="payment-form" method="POST" >
               <div class="labels">Your Name</div>
               <input type="text" name="name" id="name" class="formFun" required/>
 
@@ -142,7 +142,7 @@
               <div class="labels">ActBlue Contribution Receipt</div>
               <div class="uploadBox">
                <label class="custom-file-upload">
-                <input type="file" name="file" id="file-upload" required/>
+                <input type="file" name="file" id="file-upload" required novalidate/>
                 Attach File
               </label>
               <span id="file-selected" class="file">No file chosen</span>
@@ -165,7 +165,7 @@
             <div class="d-flex justify-content-center">
 
               <button class="claimButton notthistime" id="nothistimeButton">
-                <a class="claimButtonText"  style="color: #ED6F4E !important;">NOT THIS TIME</a>
+                <a class="claimButtonText" style="color: #ED6F4E !important;">NOT THIS TIME</a>
               </button>
             </div>
             <div style="height:32px;"></div>

@@ -228,6 +228,8 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             document.getElementById("fiveDollar").style.background = "none"
             document.getElementById("tenDollar").style.background = "none"
+            document.getElementById("fiveDollar").style.color = "#293B74"
+            document.getElementById("tenDollar").style.color = "#293B74"
         }
     });
 
