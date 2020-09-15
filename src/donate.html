@@ -14,9 +14,17 @@
   <link rel="stylesheet" href="css/howStyles.css?v=1.0">
   <link rel="stylesheet" href="css/aboutus.css?v=1.0">
   <link rel="stylesheet" href="css/donate.css?v=1.0">
+    <meta property="og:image" content="images/Social_Preview_72-DPI.jpg" />
+
   <link rel="stylesheet" href="css/stripe.css?v=1.0">
 
-
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#355abc">
+  <meta name="msapplication-TileColor" content="#355abc">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=Open+Sans&family=Patua+One&display=swap" rel="stylesheet">
   <script src="https://js.stripe.com/v3/"></script>
@@ -85,6 +93,7 @@
       <div class="d-flex justify-content-center">
       <div class="rectangle">
         <div class="formPadding">
+          <form id="payment-form" netlify-honeypot="bot-field" data-netlify="true" name="payment-form" method="POST">
           <div class="labels">Your Name</div>
           <input type="text" name="name" id="name" class="formFun" required/>
 
@@ -98,12 +107,12 @@
           <div class="thanksChip">Thanks for chipping in what you can!</div>
           <div class="row">
             <div class="col">
-             <div class="dollarButton thanksChip">
+             <div class="dollarButton thanksChip" id="fiveDollar">
                $5
              </div>
             </div>
             <div class="col">
-              <div class="dollarButton thanksChip">
+              <div class="dollarButton thanksChip" id="tenDollar">
                 $10
               </div>
             </div>
@@ -112,7 +121,7 @@
 
           <div class="row">
             <div class="col">
-              <span class="dollarPosition">$</span><input type="number" min="0.00" max="1000.00" step="0.01" class="inputDollar">
+              <span class="dollarPosition">$</span><input type="number" min="0.00" max="1000.00" step="0.01" class="inputDollar" id="inputDollar">
             </div>
           </div>
                       <div class="labelSeparator"></div>
@@ -121,7 +130,6 @@
                                   <div class="labelSeparator"></div>
 
             <div class="thanksChip">
-            <form id="payment-form" netlify-honeypot="bot-field" data-netlify="true" enctype="multipart/form-data" name="payment-form" method="POST">
                 <div id="card-element">
                   <!--Stripe.js injects the Card Element-->
                </div>
@@ -130,7 +138,7 @@
             <div class="labelSeparator"></div>
 
             <div class="d-flex justify-content-center">
-               <button class="donateButton" id="submit" disabled>
+               <button class="donateButton" id="submit">
                   <div class="spinner hidden" id="spinner"></div>
                   <span id="button-text">DONATE</span>
               </button>
