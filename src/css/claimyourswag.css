@@ -40,7 +40,7 @@ input[type="file"] {
 	background-image: url('../images/Hero@2x.jpg');
 	background-size: cover;
 	background-repeat: no-repeat; 
-	background-position: center center;
+	background-position: center left;
 	background-color: 	#293B74;
 	margin: 0;
 }
