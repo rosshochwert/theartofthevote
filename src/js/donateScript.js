@@ -191,7 +191,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
         if (plainInputsValid){
-            fetchPaymentIntent(100).then(function(data){
+            var value = parseInt(document.getElementById("inputDollar").value) * 100
+            fetchPaymentIntent(value).then(function(data){
                 console.log("here")
                 payWithCard(stripe, card, data.clientSecret);
 
