@@ -202,23 +202,23 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     document.getElementById("fiveDollar").addEventListener("click", function() {
-        document.getElementById("fiveDollar").style.background = "blue"
+        document.getElementById("fiveDollar").style.background = "#ED6F4E"
         document.getElementById("tenDollar").style.background = "none"
         document.getElementById("inputDollar").value = "5.00"
     })
 
     document.getElementById("tenDollar").addEventListener("click", function() {
-        document.getElementById("tenDollar").style.background = "blue"
+        document.getElementById("tenDollar").style.background = "#ED6F4E"
         document.getElementById("fiveDollar").style.background = "none"
         document.getElementById("inputDollar").value = "10.00"
     })
 
     document.getElementById("inputDollar").addEventListener('change', (event) => {
         if (event.target.value == 5) {
-            document.getElementById("fiveDollar").style.background = "blue"
+            document.getElementById("fiveDollar").style.background = "#ED6F4E"
             document.getElementById("tenDollar").style.background = "none"
         } else if (event.target.value == 10) {
-            document.getElementById("tenDollar").style.background = "blue"
+            document.getElementById("tenDollar").style.background = "#ED6F4E"
             document.getElementById("fiveDollar").style.background = "none"
         } else {
             document.getElementById("fiveDollar").style.background = "none"
