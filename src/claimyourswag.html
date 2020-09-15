@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="css/howStyles.css?v=1.0">
   <link rel="stylesheet" href="css/aboutus.css?v=1.0">
   <link rel="stylesheet" href="css/donate.css?v=1.0">
+    <link rel="stylesheet" href="css/claimyourswag.css?v=1.0">
+
     <meta property="og:image" content="images/Social_Preview_72-DPI.jpg" />
 
   <link rel="stylesheet" href="css/stripe.css?v=1.0">
@@ -103,6 +105,34 @@
           <input type="email" name="email" id="email" class="formFun" required/>
 
           <div class="labelSeparator"></div>
+
+           <div class="labels">ActBlue Contribution Receipt</div>
+           <div class="uploadBox">
+             <label class="custom-file-upload">
+              <input type="file" name="file" id="file-upload" required/>
+              Attach File
+            </label>
+            <span id="file-selected" class="file">No file chosen</span>
+          </div>
+
+          <div class="labelSeparator"></div>
+
+          <div class="descriptionText">
+          Enjoyed our website? Donate to The Art of the Vote to help us keep producing new stickers and educating voters.
+        </div>
+
+        <div style="height:32px;"></div>
+
+        <div class="donateButton3">
+            <a class="claimButtonText">DONATE $3 OR MORE</a>
+        </div>
+
+        <div style="height:32px;"></div>
+
+        <div class="claimButton">
+            <a class="claimButtonText">NOT THIS TIME</a>
+        </div>
+
 
           <div class="thanksChip">Thanks for chipping in what you can!</div>
           <div class="row">
@@ -200,7 +230,7 @@
   </div>
 </div>
 
-<script src="js/donateScript.js"></script>
+<script src="js/claimScript.js"></script>
 
 <script
   src="https://code.jquery.com/jquery-3.5.1.min.js"

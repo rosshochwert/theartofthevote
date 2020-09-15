@@ -1,0 +1,49 @@
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #355ABC;
+    color: #FFFFFF;
+	  font-family: "Open Sans";
+	  font-size: 12px;
+	  font-weight: bold;
+	  letter-spacing: 0;
+	  line-height: 24px;
+	  text-align: center;
+	    	width: 85px;
+	    	margin-bottom: 0 !important;
+}
+
+.uploadBox {
+	border: 1px solid #DBDBDB;
+  	border-radius: 5px;
+  	padding-top: 16px;
+  	padding-bottom: 16px;
+  	padding-left: 12px;
+  	margin-top: 15px;
+}
+
+.file{
+	color: #293B74;
+  font-family: "Open Sans";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 24px;
+  padding-left: 15px;
+}
+
+.rectangle {
+
+}
+
+.donateButton3{
+
+}
+
+.notthistime{
+	
+}

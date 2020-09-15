@@ -175,6 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     mountForm()
 
+    $('#file-upload').bind('change', function() { var fileName = ''; fileName = $(this).val(); $('#file-selected').html(fileName); })
 
     document.getElementById("submit").addEventListener("click", function() {
         event.preventDefault();
