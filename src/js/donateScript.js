@@ -83,7 +83,7 @@ var sendEmail = function(donation) {
     var nameValue = document.getElementById("name").value;
     var emailValue = document.getElementById("email").value;
 
-    fetch("/.netlify/functions/sendmail", {
+    var promise = fetch("/.netlify/functions/sendmail", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -98,8 +98,10 @@ var sendEmail = function(donation) {
             return result.json();
         })
         .then(function(data) {
-
+            return data;
         })
+
+    return promise;
 }
 
 function triggerBrowserValidation() {
@@ -116,7 +118,7 @@ function triggerBrowserValidation() {
 
 function fetchPaymentIntent(amount) {
     console.log("fetching payment")
-    fetch("/.netlify/functions/purchase", {
+    return fetch("/.netlify/functions/purchase", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -189,10 +191,11 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
         if (plainInputsValid){
-            paymentId = new Promise(fetchPaymentIntent(100))
-            paymentId.then((data) => { 
+            fetchPaymentIntent(100).then(function(data){
+                console.log("here")
                 payWithCard(stripe, card, data.clientSecret);
-            });
+
+            })
         } else {
             triggerBrowserValidation();
         }
