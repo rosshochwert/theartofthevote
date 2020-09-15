@@ -83,7 +83,7 @@ var sendEmail = function(donation) {
     var nameValue = document.getElementById("name").value;
     var emailValue = document.getElementById("email").value;
 
-    var promise = fetch("/.netlify/functions/sendmail", {
+    fetch("/.netlify/functions/sendmail", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -92,7 +92,7 @@ var sendEmail = function(donation) {
                 name: nameValue,
                 email: emailValue,
                 donation: donation
-            }) //need to define how much to purchase first duh
+            })
         })
         .then(function(result) {
             return result.json();
@@ -101,7 +101,6 @@ var sendEmail = function(donation) {
             return data;
         })
 
-    return promise;
 }
 
 function triggerBrowserValidation() {
