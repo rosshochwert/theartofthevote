@@ -7,10 +7,19 @@
 }
 
 .backgroundObama {
-	background-image: url('../images/Chicago@2x.png');
+	background-image: url('../images/Chicago@1x.png');
 	background-size: 75% auto;
 	background-repeat: no-repeat; 
 	background-position: bottom right;
+}
+
+.subtitle {
+  color: #293B74;
+  font-family: "Open Sans";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
 }
 
 @media (max-width: 767px) {

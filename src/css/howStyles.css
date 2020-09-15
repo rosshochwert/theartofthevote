@@ -1,5 +1,5 @@
 .weightImage{
-	background-image: url('../images/Scale@2x.png');
+	background-image: url('../images/Scale@1x.jpg');
 	background-size: 100% auto;
 	background-repeat: no-repeat; 
 	background-color: #4AA6A4;
@@ -44,11 +44,15 @@
 	.moreResources{
 		padding: 20px;
 	}
+
+	.weightImage{
+	background-image: none;
+		}
 }
+
 
 @media (min-width:  400px){
 	.chartImage {
-		margin-top: 30%;
 		height: 100%;
 	}
 
@@ -60,6 +64,9 @@
 
 
 @media (min-width: 769px) {
+	.conditionalScaleImage{
+		display: 	none;
+	}
 	.chartImage {
 		margin-top: 111px;
 		height: 100%;	
