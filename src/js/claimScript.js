@@ -211,13 +211,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
     })
 
-    document.getElementById("tenDollar").addEventListener("click", function() {
+    document.getElementById("tenDollar").addEventListener("click", function(event) {
         document.getElementById("tenDollar").style.background = "#ED6F4E"
         document.getElementById("tenDollar").style.color = "white"
         document.getElementById("fiveDollar").style.background = "none"
         document.getElementById("fiveDollar").style.color = "#293B74"
         document.getElementById("inputDollar").value = "10.00"
     })
+
+    document.getElementById("donateButton").addEventListener("click", function(event) {
+        event.preventDefault()
+        document.getElementById("optionalDonation").style.display = "block"
+        document.getElementById ("submitDonateButton").style.display = "block"
+        document.getElementById("submit").disabled = true;
+    })
+
+    document.getElementById("sorryMessedUp").addEventListener("click", function(event) {
+        event.preventDefault()
+        document.getElementById("optionalDonation").style.display = "none"
+        document.getElementById("submitDonateButton").style.display = "block"
+        document.getElementById("submit").disabled = false;
+    })
+
+    document.getElementById("nothistimeButton").addEventListener("click", function(event) {
+        event.preventDefault()
+    });
+
 
     document.getElementById("inputDollar").addEventListener('change', (event) => {
         if (event.target.value == 5) {

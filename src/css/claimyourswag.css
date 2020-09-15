@@ -38,7 +38,7 @@ input[type="file"] {
 
 .backgroundHero {
 	background-image: url('../images/Hero@2x.jpg');
-	background-size: auto 100%;
+	background-size: cover;
 	background-repeat: no-repeat; 
 	background-position: center center;
 	background-color: 	#293B74;
@@ -57,7 +57,33 @@ input[type="file"] {
 }
 
 .notthistime{
+	margin-top: 16px !important;
+	border: 1px solid #ED6F4E !important;
+  	border-radius: 28px !important;
+  	background-color: white;
+}
 
+.small{
+	width: 	60%;
+}
+
+.sorryText{
+	color: #848484 !important;
+  font-family: "Open Sans";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+}
+
+.sorry{
+	border-radius: 28px !important;
+  	background-color: #E6E6E6;
+  	border-color: 	#E6E6E6 !important;
+}
+
+.myhero{
+	margin-top: 24px !important;
 }
 
 .claimTitle {
