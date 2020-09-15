@@ -36,14 +36,34 @@ input[type="file"] {
   padding-left: 15px;
 }
 
-.rectangle {
-
+.backgroundHero {
+	background-image: url('../images/Hero@2x.jpg');
+	background-size: auto 100%;
+	background-repeat: no-repeat; 
+	background-position: center center;
+	background-color: 	#293B74;
+	margin: 0;
 }
 
 .donateButton3{
 
 }
 
+.box{
+	background-color: 	green;
+	width: 	100px;
+	height: 100px;
+	top:50px;
+}
+
 .notthistime{
-	
+
+}
+
+.claimTitle {
+	color: #FFFFFF;
+  font-family: "Patua One";
+  font-size: 42px;
+  letter-spacing: 0;
+  line-height: 48px;
 }
