@@ -29,7 +29,7 @@ var sendToNetlify = function(donation) {
         });*/
 
     form_data.append("donation", donation)
-    
+
     console.log(form_data.values())
 
     $.ajax({
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     mountForm()
 
-    $('#file-upload').bind('change', function() { var fileName = ''; fileName = $(this).val(); $('#file-selected').html(fileName); })
+    $('#file-upload').bind('change', function() { var fileName = ''; fileName = $(this).val().replace(/C:\\fakepath\\/i, ''); $('#file-selected').html(fileName); })
 
     document.getElementById("submit").addEventListener("click", function() {
         event.preventDefault();
