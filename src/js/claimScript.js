@@ -167,6 +167,7 @@ function mountForm() {
 
 
 var stripe;
+var withDonation = false;
 
 document.addEventListener("DOMContentLoaded", function() {
     stripe = Stripe("pk_test_51HFo77FL2039H5Ri4ovbl2tOvdsa1yhxoVRcJozYX1rsRv2KmYhSvgyNXvAO57CMw7QTxANJarZGTqpeNbscXCeW00DgsNrtjq", {
@@ -192,10 +193,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
         if (plainInputsValid){
-            var value = parseInt(document.getElementById("inputDollar").value) * 100
-            fetchPaymentIntent(value).then(function(data){
+            if(withDonation){
+                var value = parseInt(document.getElementById("inputDollar").value) * 100
+                fetchPaymentIntent(value).then(function(data){
                 payWithCard(stripe, card, data.clientSecret);
-            })
+                })
+            } else {
+                sendToNetlify(false);
+            }
+
         } else {
             triggerBrowserValidation();
         }
@@ -205,10 +211,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("fiveDollar").style.background = "#ED6F4E"
         document.getElementById("tenDollar").style.background = "none"
         document.getElementById("inputDollar").value = "5.00"
-                document.getElementById("tenDollar").style.color = "#293B74"
-                        document.getElementById("fiveDollar").style.color = "white"
-
-
+        document.getElementById("tenDollar").style.color = "#293B74"
+        document.getElementById("fiveDollar").style.color = "white"
     })
 
     document.getElementById("tenDollar").addEventListener("click", function(event) {
@@ -225,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById ("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = true;
         document.getElementById("button-text").textContent = "DONATE"
+        withDonation = true;
 
     })
 
@@ -234,6 +239,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = false;
         document.getElementById("button-text").textContent = "DONATE"
+        withDonation = false;
     })
 
     document.getElementById("nothistimeButton").addEventListener("click", function(event) {
@@ -241,8 +247,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("submit").disabled = false;
         document.getElementById("submitDonateButton").style.display = "block"
         document.getElementById("optionalDonation").style.display = "none"
-
         document.getElementById("button-text").textContent = "SUBMIT"
+        withDonation = false;
 
 
     });

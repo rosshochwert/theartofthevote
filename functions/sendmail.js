@@ -13,7 +13,7 @@ function sendWelcomeEmail(email, name, donation) {
     const data = {
       from: {
         email: "support@theartofthevote.com",
-        name: "Ross Hochwert"
+        name: "The Art of the Vote"
       },
       reply_to: {
         email: email
