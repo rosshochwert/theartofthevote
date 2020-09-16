@@ -28,6 +28,8 @@ var sendToNetlify = function(donation) {
             alert("Thank you!");
         });*/
 
+    form_data.append("donation", donation)
+    
     console.log(form_data.values())
 
     $.ajax({
