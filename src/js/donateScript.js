@@ -42,6 +42,8 @@ var sendToNetlify = function(donation) {
                 document.querySelector(".result-no-donate-message").classList.remove("hidden");
             }
             document.querySelector("#submit").disabled = true;
+            document.getElementById("payment-form").style.display = "none"
+
             loading(false);
             sendEmail(donation)
 
@@ -142,7 +144,7 @@ function mountForm() {
             color: "#32325d",
             fontFamily: 'Arial, sans-serif',
             fontSmoothing: "antialiased",
-            fontSize: "16px",
+            fontSize: "14px",
             "::placeholder": {
                 color: "#32325d"
             }
