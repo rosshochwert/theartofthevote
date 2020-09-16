@@ -229,7 +229,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("tenDollar").style.color = "white"
         document.getElementById("fiveDollar").style.background = "none"
         document.getElementById("fiveDollar").style.color = "#293B74"
-        document.getElementById("inputDollar").value = "10.00"
+        var num = 10.00
+        document.getElementById("inputDollar").value = num.toFixed(2)
     })
 
     document.getElementById("donateButton").addEventListener("click", function(event) {
@@ -237,7 +238,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("optionalDonation").style.display = "block"
         document.getElementById ("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = true;
-        document.getElementById("button-text").textContent = "DONATE"
+        document.getElementById("button-text").textContent = "SUBMIT"
         withDonation = true;
 
     })
@@ -247,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("optionalDonation").style.display = "none"
         document.getElementById("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = false;
-        document.getElementById("button-text").textContent = "DONATE"
+        document.getElementById("button-text").textContent = "SUBMIT"
         withDonation = false;
     })
 

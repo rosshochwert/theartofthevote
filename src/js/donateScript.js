@@ -233,8 +233,9 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("fiveDollar").style.color = "#293B74"
             document.getElementById("tenDollar").style.color = "#293B74"
         }
-    });
 
+        $("#inputDollar").val(parseFloat($("#inputDollar").val()).toFixed(2));        
+    });
 
     document.querySelector("#submit").disabled = true;
 
