@@ -384,6 +384,16 @@ a.claimButtonText {
 
 }
 
+@media (max-width: 767px) {
+	.conditionalBackground{
+		background-image: url('../images/02_Homepage_v2.png');
+		background-size: auto 80%;
+		background-repeat: no-repeat; 
+		background-color: #293B74;
+		background-position: bottom left;
+	}
+}
+
 @media (max-width: 500px) {
 	.conditionalBackground{
 		background-image: url('../images/02_Homepage_v2.png');
@@ -395,6 +405,10 @@ a.claimButtonText {
 }
 
 @media (min-width: 768px) {
+
+	.desktopHidden{
+		display: none;
+	}
 
 	.infoBox {
 	padding-top: 111px;
