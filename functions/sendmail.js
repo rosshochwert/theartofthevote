@@ -4,7 +4,7 @@ client.setApiKey(process.env.SENDGRID_API_KEY);
 
 function sendWelcomeEmail(email, name, donation) {
   template_id = 'd-54287736b4134ca386975f78d7a38bd4'
-  if (donation==""){
+  if (donation=="notUsDonation"){
     template_id = 'd-e785df7d137e49a08e15a855c70103dc'
   } else if (donation=="usDonation"){
     template_id = 'd-a72a79e60d9b4f209e7fa7cb809a1361'

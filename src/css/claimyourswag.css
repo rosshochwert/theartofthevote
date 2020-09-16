@@ -45,8 +45,8 @@ input[type="file"] {
 	margin: 0;
 }
 
-.donateButton3{
-
+.claimButtonText:hover {
+    border-bottom: none !important;
 }
 
 .box{

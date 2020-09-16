@@ -88,6 +88,9 @@ var sendEmail = function(donation) {
     var emailValue = document.getElementById("email").value;
 
     var type="usDonation"
+    if (!donation){
+        type = "notUsDonation"
+    }
     fetch("/.netlify/functions/sendmail", {
             method: "POST",
             headers: {
@@ -196,7 +199,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 return;
             }
         });
-        if (plainInputsValid){
+        if (document.getElementById("file-upload").files.length == 0){
+            alert("Please upload your receipt")
+        } else if (plainInputsValid){
             if(withDonation){
                 var value = parseInt(document.getElementById("inputDollar").value) * 100
                 fetchPaymentIntent(value).then(function(data){
