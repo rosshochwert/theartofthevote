@@ -103,7 +103,11 @@
       <div class="d-flex justify-content-center">
         <div class="rectangle">
           <div class="formPadding">
-            <form id="payment-form" netlify-honeypot="bot-field" enctype='multipart/form-data' data-netlify="true" name="payment-form" method="POST" >
+            <form id="payment-form" netlify-honeypot="bot-field" enctype='multipart/form-data' data-netlify="true" name="payment-form3" method="POST" >
+
+              <input type="hidden" name="donation" id="donation"/>
+              <input type="hidden" name="bot-field" id="bot-field"/>
+
               <div class="labels">Your Name</div>
               <input type="text" name="name" id="name" class="formFun" required/>
 
@@ -120,7 +124,7 @@
               <div class="labelSeparator"></div>
 
               <div class="labels">Address Line 2</div>
-              <input type="text" name="address2" id="address2" class="formFun" required/>
+              <input type="text" name="address2" id="address2" class="formFun"/>
 
               <div class="labelSeparator"></div>
 
