@@ -16,10 +16,10 @@ a.claimButtonText {
 	color: #FFF;
 }
 
-a.claimButtonText:hover {
+/*a.claimButtonText:hover {
 	color: #FFF;
 	text-decoration: underline !important;
-}
+}*/
 
 .header {
 	background-color: #1A1B32 !important;
