@@ -44,7 +44,7 @@ var sendToNetlify = function(donation) {
                 document.querySelector(".result-no-donate-message").classList.remove("hidden");
             }
             document.querySelector("#submit").disabled = true;
-            document.getElementById("payment-form").style.display = "none"
+            document.getElementById("payment-form-container").style.display = "none"
             document.getElementById("submitDonateButton").style.display = "none"
             loading(false);
             sendEmail(donation)
