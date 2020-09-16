@@ -57,6 +57,10 @@
 
 
 @media (min-width: 768px){
+	.mobilepadding {
+		height: 80px;
+	}
+	
 	.podium {
 		width: 100%;
 		/*padding-top: 112px;*/
