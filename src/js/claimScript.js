@@ -275,6 +275,8 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("fiveDollar").style.background = "none"
             document.getElementById("tenDollar").style.background = "none"
         }
+
+        $("#inputDollar").val(parseFloat($("#inputDollar").val()).toFixed(2));
     });
 
 
