@@ -234,7 +234,7 @@ a.claimButtonText {
 		height: 40px
 	}
 	.titleText{
-		padding-top: 40px;
+		padding-top: 64px;
 		font-size: 32px;
 		line-height: 40px;
 		color: #293B74;
@@ -242,7 +242,7 @@ a.claimButtonText {
 	}
 
 	.howTitleText{
-	padding-top: 40px;
+	padding-top: 64px;
 		font-size: 32px;
 		line-height: 40px;
 		color: #FFFFFF;
@@ -250,11 +250,11 @@ a.claimButtonText {
 }
 
 .rossOtherClass {
-	padding-top: 80px;
+	padding-top: 64px;
 }
 
 	.mobileImagePadding{
-		height: 80px;
+		height: 64px;
 	}
 
 	.leftMobileGutter{
@@ -281,7 +281,7 @@ a.claimButtonText {
 	}
 
 	.learnMorePadding {
-		height: 60px
+		height: 64px
 	}
 
 	.explorePadding{
@@ -290,7 +290,7 @@ a.claimButtonText {
 	}
 
 	.mobilepadding{
-		height: 50px;
+		height: 64px;
 	}
 
 	.stickerImage{
@@ -382,7 +382,7 @@ a.claimButtonText {
 	}
 
 	.imgClass {
-		padding-top: 40px;
+		padding-top: 64px;
 		padding-right: 20px;
 		padding-left: 20px;
 		max-height: 600px;
@@ -394,7 +394,6 @@ a.claimButtonText {
 		max-height: 400px;
 		display:block;
     	margin:auto;
-    	margin-bottom: 40px;
 	}
 
 	.insetImageRight{
