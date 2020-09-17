@@ -7,15 +7,19 @@ button:focus{
 	background-color: #DA4C27;
 }
 
-.colorChange {
-	color: #ED6F4E;
-}
 
-button.second:focus,.colorChange:focus{
+button.second:focus{
 	background-color: #ED6F4E;
 	color: #FFF !important;
 }
 
+button.second {
+	color: #ED6F4E;
+}
+
+button:focus {
+	outline-color: #E6E6E6 !important;
+}
 
 
 
@@ -306,6 +310,10 @@ a.claimButtonText {
 	}
 	.toggler {
 		 margin-right: 22px;
+	}
+
+	.toggler:focus{
+		background-color: #1A1B32 !important;
 	}
 
 	.testImage{

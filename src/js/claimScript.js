@@ -239,7 +239,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById ("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = true;
         document.getElementById("button-text").textContent = "SUBMIT"
-        document.getElementById("colorChange").style.color = "#ED6F4E"
 
         withDonation = true;
 
@@ -263,12 +262,10 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("submitDonateButton").style.display = "block"
         document.getElementById("optionalDonation").style.display = "none"
         document.getElementById("button-text").textContent = "SUBMIT"
-        document.getElementById("colorChange").style.color = "#FFF"
         withDonation = false;
 
 
     });
-
 
     document.getElementById("inputDollar").addEventListener('change', (event) => {
         if (event.target.value == 5) {
