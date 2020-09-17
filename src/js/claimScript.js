@@ -239,6 +239,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById ("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = true;
         document.getElementById("button-text").textContent = "SUBMIT"
+        document.getElementById("colorChange").style.color = "#ED6F4E"
+
         withDonation = true;
 
     })
@@ -246,9 +248,12 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("sorryMessedUp").addEventListener("click", function(event) {
         event.preventDefault()
         document.getElementById("optionalDonation").style.display = "none"
+        document.getElementById("nothistimeButton").style.display = "none"
+
         document.getElementById("submitDonateButton").style.display = "block"
         document.getElementById("submit").disabled = false;
         document.getElementById("button-text").textContent = "SUBMIT"
+
         withDonation = false;
     })
 
@@ -258,6 +263,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("submitDonateButton").style.display = "block"
         document.getElementById("optionalDonation").style.display = "none"
         document.getElementById("button-text").textContent = "SUBMIT"
+        document.getElementById("colorChange").style.color = "#FFF"
         withDonation = false;
 
 
