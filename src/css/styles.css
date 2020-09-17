@@ -15,6 +15,7 @@ button.second:focus{
 
 button.second {
 	color: #ED6F4E;
+	line-height: 40px !important;
 }
 
 button:focus {

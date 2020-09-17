@@ -84,6 +84,7 @@ input[type="file"] {
 
 .myhero{
 	margin-top: 24px !important;
+  line-height: 40px !important;
 }
 
 .claimTitle {
