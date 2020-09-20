@@ -37,6 +37,10 @@
 		min-height: 440px;
 		padding-top: 100px;
 	}
+	
+	.quickRecap{
+		padding-top: 48px;
+	}
 
 	.chartImage {
 		height: 100%;

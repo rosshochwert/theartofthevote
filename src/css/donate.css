@@ -113,6 +113,10 @@
 
 @media (max-width: 767px) {
 
+  .pleaPadding{
+  padding-top: 64px; 
+}
+
   .handImage{
       background-image: none;
     }
