@@ -85,7 +85,7 @@ var sendEmail = function(donation) {
     var nameValue = document.getElementById("name").value;
     var emailValue = document.getElementById("email").value;
 
-    var type="usDonation"
+    var type="justDonation"
     fetch("/.netlify/functions/sendmail", {
             method: "POST",
             headers: {
