@@ -14,8 +14,7 @@ input[type="file"] {
 	  letter-spacing: 0;
 	  line-height: 24px;
 	  text-align: center;
-	    	width: 85px;
-	    	margin-bottom: 0 !important;
+	 margin-bottom: 0 !important;
 }
 
 .uploadBox {
