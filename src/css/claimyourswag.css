@@ -26,6 +26,11 @@ input[type="file"] {
   	margin-top: 15px;
 }
 
+.messagePadding {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
 .file{
 	color: #293B74;
   font-family: "Open Sans";
