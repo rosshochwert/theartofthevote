@@ -24,6 +24,12 @@ button:focus {
 
 
 
+
+
+a.claimButtonText {
+	color: #FFF;
+}
+
 .linkOver {
 	text-decoration: underline !important;
 	color: #FFF;
@@ -38,10 +44,9 @@ button:focus {
 	text-decoration: underline !important;
 }
 
-a.claimButtonText {
-	color: #FFF;
+.candidateLink:hover {
+	color: #007bff !important;
 }
-
 /*a.claimButtonText:hover {
 	color: #FFF;
 	text-decoration: underline !important;
@@ -459,9 +464,11 @@ a.claimButtonText {
 	.nonMobilePadding{
 		padding-top: 48px;
 	}
-	.headerFont:hover, .claimButtonText:hover {
+	.headerFont:hover {
     	border-bottom: 4px solid #ED6F4E !important;
 	}
+
+	./*claimButtonText:hover*/
 
 	.headerFont:after, .claimButtonText:after {
     	transition: width 0.3s ease;

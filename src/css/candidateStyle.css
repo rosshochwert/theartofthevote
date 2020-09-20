@@ -40,6 +40,10 @@
 	text-transform: uppercase;
 }
 
+.safeText:hover {
+	color: #007bff !important;
+}
+
 @media (max-width: 767px){
 	.podium {
 		width: 100%;
