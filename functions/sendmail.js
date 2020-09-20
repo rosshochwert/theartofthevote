@@ -3,11 +3,11 @@ const client = require('@sendgrid/client');
 client.setApiKey(process.env.SENDGRID_API_KEY);
 
 function sendWelcomeEmail(email, name, donation) {
-  template_id = 'd-54287736b4134ca386975f78d7a38bd4'
+  template_id = 'd-3f4e0602bfe64c6aa141e69f2d1ae8c2'
   if (donation=="notUsDonation"){
-    template_id = 'd-e785df7d137e49a08e15a855c70103dc'
+    template_id = 'd-54287736b4134ca386975f78d7a38bd4'
   } else if (donation=="usDonation"){
-    template_id = 'd-a72a79e60d9b4f209e7fa7cb809a1361'
+    template_id = 'd-698fee4171eb4abda875eb2b60ecdf39'
   }
   return new Promise((fulfill, reject) => {
     const data = {
