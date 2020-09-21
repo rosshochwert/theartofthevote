@@ -171,7 +171,7 @@ function mountForm() {
 var stripe;
 
 document.addEventListener("DOMContentLoaded", function() {
-    stripe = Stripe("pk_test_51HFo77FL2039H5Ri4ovbl2tOvdsa1yhxoVRcJozYX1rsRv2KmYhSvgyNXvAO57CMw7QTxANJarZGTqpeNbscXCeW00DgsNrtjq", {
+    stripe = Stripe("pk_live_51HFo77FL2039H5RiYSleGu9sWCNWIZRy6PjTYkfLe7y8kpLiHNJ58Cri6FACnCc5ZxqAhqEm1ebYFRLKWRpoxHIx001zAuXrja", {
         maxNetworkRetries: 2
     });
 
