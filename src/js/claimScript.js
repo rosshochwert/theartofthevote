@@ -277,6 +277,8 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             document.getElementById("fiveDollar").style.background = "none"
             document.getElementById("tenDollar").style.background = "none"
+            document.getElementById("tenDollar").style.color = "#293B74"
+            document.getElementById("fiveDollar").style.color  = "#293B74"
         }
 
         $("#inputDollar").val(parseFloat($("#inputDollar").val()).toFixed(2));
