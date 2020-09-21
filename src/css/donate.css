@@ -111,10 +111,19 @@
   background-position: bottom;
 }
 
+.thankYouPadding{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 @media (max-width: 767px) {
 
   .pleaPadding{
   padding-top: 64px; 
+}
+
+.formpadding {
+  padding-top: 48px;
 }
 
   .handImage{
