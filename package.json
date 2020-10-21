@@ -6,6 +6,7 @@
   "dependencies": {
     "@sendgrid/client": "^7.2.3",
     "@sendgrid/mail": "^7.2.3",
+    "netlify-cli": "^2.65.7",
     "netlify-lambda": "^2.0.1",
     "stripe": "^8.85.0"
   },
