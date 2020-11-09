@@ -1,0 +1,719 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178260511-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178260511-1');
+</script>
+  <meta charset="utf-8">
+
+  <title>The Art of the Vote</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/candidateStyle.css?v=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#355abc">
+  <meta name="msapplication-TileColor" content="#355abc">
+  <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="images/Social_Preview_72-DPI.jpg" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&family=Open+Sans&family=Patua+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <div class="fixed-top" style="background-color: #1A1B32; height:112px;">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark gutterPadding header" style="max-width: 1400px; margin: 0 auto">
+      <a class="navbar-brand leftMobileGutter" href="/index.html">
+        <img src="/images/01_Homepage.png" width="151" height="35" alt="">
+      </a>
+      <button class="navbar-toggler toggler hider" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon newIcon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="mr-auto"></ul>
+        <ul class="navbar-nav">
+         <li class="nav-item navPadding">
+          <a class="nav-link headerFont" href="/howwedoit.html">HOW WE DO IT</a>
+        </li>
+        <li class="nav-item navPadding">
+          <a class="nav-link headerFont" href="/candidates.html">THE CANDIDATES</a>
+        </li>
+        <li class="nav-item navPadding">
+          <a class="nav-link headerFont" href="/claimyourswag.html">CLAIM YOUR SWAG</a>
+        </li>
+        <li class="nav-item navPadding desktopHidden">
+          <a class="nav-link headerFont" href="/aboutus.html">ABOUT US</a>
+        </li>
+        <li class="nav-item navPadding mobileLast desktopHidden">
+          <a class="nav-link headerFont" href="/donate.html">DONATE TO ART OF THE VOTE</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+
+<div class="header">
+
+</div>
+
+<div style="background-color: #355ABC">
+  <div class="container" style="max-width: 1400px;">
+    <div class="row mx-0 podiumText">
+      <div class="col-lg col-md p-0">
+        <div class="leftGutter mobileGutter">
+          <div class="candidateHeroText">
+            The Candidates
+          </div>
+          <div class="howDescriptionText podiumPadding">
+            There are 35 senate battles happening, but some races are more competitive than others. We highlighted the most important races that need your support to give Democrats the best chances of gaining three to four seats. Keep in mind that these races are always changing, so keep up with the latest polls <a href="https://projects.fivethirtyeight.com/polls/senate/" class="linkOver" target="_blank">here</a>. <br /><br />Read up on each candidate and choose your battle, or donate to Vote Save America's <a class="linkOver" target="_blank" href="https://secure.actblue.com/donate/getmitch">Get Mitch</a> fund to strategically divide your contribution. And if you donate $20 or more, go to the <a class="linkOver" href="/claimyourswag.html">Claim Your Swag</a> page for instructions on how to have your sticker pack delivered.
+            <br /> <br />
+            <b>Why It’s Important to Donate:</b>
+            <br /> <br />
+            Donating makes the party less reliant on big donors and raises awareness about the candidates. Let’s do our part and contribute.
+            <div class="conditionalHeight80"></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-md p-0">
+        <div style="height:40px;"></div>
+        <img src="images/Podium-08@1x.png" srcset="/images/Podium-08@1x.png 1x, /images/Podium-08@2x.png 2x" class="podium"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="max-width: 1400px">
+  <div class="leftGutter rightGutterMobile">
+    <div class="stickerPadding">
+      <div class="titleText">
+        Big Four
+      </div>
+      <div class="descriptionText">
+        Put your hands together for our best pick-up opportunities.
+      </div>
+      <br /><br /><br />
+    </div>
+
+    <div class="row mx-0">
+      <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <img src="/images/1_Mark_Kelly.jpg" srcset="/images/1_Mark_Kelly.jpg 1x, /images/1_Mark_Kelly@2x.jpg 2x" class="dumbImage"/>
+          <div class="candidateTitle">
+            Arizona: Mark Kelly
+          </div>
+          <div class="candidateText"> 
+            Kelly is a retired US Navy combat pilot, engineer and NASA astronaut — no biggie. He cares about health care, economy, gun safety and fixing the broken immigration system.
+            <br /><br />
+
+            <b><i>Opponent: Martha McSally</b> <span style="padding-left:3px">(Was appointed to fill the seat of the late Senator John McCain, so she hasn’t actually won an election)</span></i>
+
+
+            <br /><br />
+            <b><i><a class="candidateLink" target="_blank" href="https://markkelly.com/">Learn More About Kelly</a></i></b> 
+
+          </div>
+          <a target="_blank" class="claimButtonText" href="https://secure.actblue.com/donate/mek-website?refcode=website-donate">
+          <button class="claimButton">
+            <span>DONATE NOW</span>
+          </button>
+          </a>
+          <br /><br /><br />
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <img src="/images/2_John_Hickenlooper.jpg" srcset="/images/2_John_Hickenlooper.jpg 1x, /images/2_John_Hickenlooper@2x.jpg 2x" class="dumbImage"/>
+          <div class="candidateTitle">
+            Colorado: John Hickenlooper
+          </div>
+          <div class="candidateText"> 
+            Colorado has been reliably blue since 2014, so we have a good chance here. Hickenlooper is a former governor and ran for president in 2020. He cares about small businesses, gun safety and the environment. Fun fact — he opened the first brewpub in Colorado.
+            <br /><br />
+
+            <b><i>Opponent: Senator Cory Gardner </b><span style="padding-left:3px"> (Reliably votes with Trump and the Republicans)</span></i>
+
+
+            <br /><br />
+            <b><i><a class="candidateLink" target="_blank"  href="https://hickenlooper.com/">Learn More About Hickenlooper</a></i></b> 
+          </div>
+          <a class="claimButtonText" target="_blank"  href="https://secure.actblue.com/donate/jwh?refcode=web-nav-button">
+          <button class="claimButton">
+            <span>DONATE NOW</span>
+          </button>
+          </a>
+          <br /><br /><br />
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <img src="/images/3_Sara_Gideon.jpg" srcset="/images/3_Sara_Gideon.jpg 1x, /images/3_Sara_Gideon@2x.jpg 2x"  class="dumbImage"/>
+          <div class="candidateTitle">
+            Maine: Sara Gideon
+          </div>
+          <div class="candidateText"> 
+            Despite Maine going for Hillary in 2016 and the Democrats flipping the congressional district in 2018, it’s still dicey. Gideon is currently Maine Speaker of the House and cares about healthcare, the economy and education.
+            <br /><br />
+
+            <b><i>Opponent: Senator Susan Collins <span style="padding-left:3px"></b> (AKA the world’s most unpopular Senator)</span></i>
+
+            <br /><br />
+            <b><i><a class="candidateLink"  target="_blank"  href="https://saragideon.com/">Learn More About Gideon</a></b></i> 
+
+          </div>
+          <a class="claimButtonText" target="_blank"  href="https://secure.actblue.com/donate/gideon2020?refcode=topper-button-nav">
+          <button class="claimButton">
+            <span>DONATE NOW</span>
+          </button>
+          </a>
+          <br /><br /><br />
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <img src="/images/4_Cal_Cunningham.jpg" srcset="/images/4_Cal_Cunningham.jpg 1x, /images/4_Cal_Cunningham@2x.jpg 2x" class="dumbImage"/>
+
+          <div class="candidateTitle">
+            North Carolina: Cal Cunningham
+          </div>
+          <div class="candidateText"> 
+            North Carolina is considered another swing state. Cunningham is a former senator, an Afghanistan and Iraq war veteran, and helped form an environmental waste reduction company. He cares about education, environment and campaign finance reform, and was Vice Chairman of the Governor Roy Cooper’s Crime Commission. 
+            <br /><br />
+            <b><i>Opponent: Senator Thom Tillis</b> <span style="padding-left:3px">(Names his dogs after Republican presidents)</span></i>
+            <br /><br />
+            <b><i><a class="candidateLink" target="_blank"  href="https://www.calfornc.com/">Learn More About Cunningham</a></i></b>
+
+          </div>
+          <a class="claimButtonText" target="_blank"  href="https://secure.actblue.com/donate/jcc-ads-200608-evergreen-dd-search?refcode=ads_search_200807_cal%20cunningham_454848293169_us&recurring=true&gclid=Cj0KCQjw1qL6BRCmARIsADV9JtaqzdslzPWm84oFfKvl3WjOhlS1F6fUMAFHGW4c2g7_8EUg67wos7AaAsU_EALw_wcB">
+          <button class="claimButton">
+            <span>DONATE NOW</span>
+          </button>
+          </a>
+          <br /><br /><br />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="candidateBottomPadding"></div>
+</div>
+</div>
+
+<!-- Toss Ups -->
+<div style="background-color: #EFEBE4;">
+  <div class="container" style="max-width: 1400px;">
+    <div class="leftGutter rightGutterMobile">
+      <div class="stickerPadding">
+        <div class="titleText">
+          Toss-Ups
+        </div>
+        <div class="descriptionText">
+          These states traditionally lean red, but have been surprisingly close races recently. They’re essential to cement our four-seat gain.
+        </div>
+        <br /><br />
+      </div>
+
+      <div class="row mx-0">
+        <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+          <div class="stickerPadding">
+            <img src="/images/5_Jon_Ossoff.jpg" srcset="/images/5_Jon_Ossoff.jpg 1x, /images/5_Jon_Ossoff@2x.jpg 2x" class="dumbImage"/>
+            <div class="candidateTitle">
+              Georgia: Jon Ossoff
+            </div>
+            <div class="candidateText"> 
+              This is a highly competitive face off, heavily funded by both Democrats and Republicans. Georgia has not elected a Democratic senator in 20 years but the state is shifting from red to purple. Ossoff is an investigative journalist, business owner, and Georgia native who cares about healthcare, clean energy, small businesses, and rooting out corruption in the government. 
+              <br /><br />
+
+              <b><i>Opponent: David Perdue</b> <span style="padding-left:3px">(Former CEO of Reebok)</span></i>
+
+
+              <br /><br />
+              <b><i><a class="candidateLink" target="_blank"  href="https://electjon.com/">Learn More About Ossoff</a></i></b> 
+
+            </div>
+            <a class="claimButtonText" target="_blank"  href="https://secure.actblue.com/donate/ms_hp_ossoff?refcode=MS_HP_FR_2019.09.10_X_homepage_X__X__X&amount=25&amounts=15,25,50,100,250,500,1000,2800">
+            <button class="claimButton">
+              <span>DONATE NOW</span>
+            </button>
+            </a>
+            <br /><br /><br />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+          <div class="stickerPadding">
+            <img src="/images/6_Theresa_Greenfield.jpg" srcset="/images/6_Theresa_Greenfield.jpg 1x, /images/6_Theresa_Greenfield@2x.jpg 2x" class="dumbImage"/>
+            <div class="candidateTitle">
+              Iowa: Theresa Greenfield
+            </div>
+            <div class="candidateText"> 
+              Greenfield is an urban planner and real estate developer who cares about defending Social Security and Medicare. That focus might seem a little retro, but if she wins her campaign may inform how Democrats can regain ground from Republicans in rural America.
+              <br /><br />
+
+              <b><i>Opponent: Joni Ernst</b><span style="padding-left:3px"> (Of the <a target="_blank"  href="https://abcnews.go.com/Politics/video/joni-ernst-senate-candidate-make-dc-squeal-23365217">Make Em Squeal Campaign</a>...what?!)</span></i>
+
+              <br /><br />
+              <b><i><a class="candidateLink" target="_blank"  href="https://greenfieldforiowa.com/">Learn More About Greenfield</a></i></b> 
+
+            </div>
+            <a class="claimButtonText" target="_blank"  href="https://secure.actblue.com/donate/tg-website-2020?refcode=web">
+            <button class="claimButton">
+              <span>DONATE NOW</span>
+            </button>
+            </a>
+            <br /><br /><br />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+          <div class="stickerPadding">
+            <img src="/images/7_Steve_Bullock.jpg" srcset="/images/7_Steve_Bullock.jpg 1x, /images/7_Steve_Bullock@2x.jpg 2x" class="dumbImage"/>
+
+            <div class="candidateTitle">
+             Montana: Steve Bullock
+           </div>
+           <div class="candidateText"> 
+            Montana doesn’t register voters by party and has a proud history of political individualism. Bullock is a popular two-term Montana governor, former attorney general, and briefly ran for president in 2020. He’s credited with keeping infection rates relatively low and cares about healthcare, the economy and public lands.
+            <br /><br />
+            <b><i>Opponent: Steve Daines</b> <span style="padding-left:3px">(Another Trump lover)</span></i>
+            <br /><br />
+            <b><i><a target="_blank"  class="candidateLink" href="https://stevebullock.com/">Learn More About Learn More About Bullock</a></i></b> 
+
+
+          </div>
+          <a target="_blank"  class="claimButtonText" href="https://secure.actblue.com/donate/sb-homepage?refcode=scb_web_header-button">
+          <button class="claimButton">
+            <span>DONATE NOW</span>
+          </button>
+          </a>
+          <br /><br /><br />
+        </div>
+      
+        <div class="candidateBottomPadding"></div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Defend -->
+<div class="container" style="max-width: 1400px;">
+  <div class="leftGutter rightGutterMobile">
+    <div class="stickerPadding">
+      <div class="titleText">
+        Defend
+      </div>
+      <div class="descriptionText">
+        These Democratic seats are not in solidly blue states and are the most at risk to flip.
+      </div>
+      <br /><br />
+    </div>
+
+    <div class="row mx-0">
+      <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <img src="/images/8_Doug_Jones.jpg" srcset="/images/8_Doug_Jones.jpg 1x, /images/8_Doug_Jones@2x.jpg 2x" class="dumbImage"/>
+          <div class="candidateTitle">
+            Alabama: Doug Jones
+          </div>
+          <div class="candidateText"> 
+            Trump’s net approval rating is very high in Alabama, and Jones voted to convict Trump on both impeachment counts. When Jones was a US Attorney he prosecuted the Klansmen responsible for the infamous 1963 bombing of the 16th Street Baptist Church, bringing justice to the four young girls who died. He is a proponent for affordable health care, civil rights, education and the economy. 
+            <br /><br />
+
+            <b><i>Opponent: Tommy Tuberville</b> <span style="padding-left:3px">(The shady former Auburn University football coach)</span></i>
+
+
+            <br /><br />
+            <b><i><a class="candidateLink" target="_blank"  href="https://dougjones.com/">Learn More About Jones </a></i></b> 
+
+          </div>
+          <a class="claimButtonText" target="_blank" href="https://secure.actblue.com/donate/jones-homepage1">
+          <button class="claimButton">
+            <span>DONATE NOW</span>
+          </button>
+          </a>
+          <br /><br /><br />
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <img src="/images/9_Gary_Peters.jpg" srcset="/images/9_Gary_Peters.jpg 1x, /images/9_Gary_Peters@2x.jpg 2x" class="dumbImage"/>
+          <div class="candidateTitle">
+            Michigan: Gary Peters
+          </div>
+          <div class="candidateText"> 
+            Michigan is also considered a swing state. Although Trump won in 2016, it was by his narrowest margin and Michigan elected Democratic Governor Gretchen Whitmer in 2018. Peters was a long-serving House member before he was senator, and has been recognized as bipartisan and an effective lawmaker in the Senate.
+            <br /><br />
+
+            <b><i>Opponent: John James</b> <span style="padding-left:3px">(Conservative media darling)</span></i>
+
+            <br /><br />
+            <b><i><a class="candidateLink" target="_blank" href="https://petersformichigan.com/">Learn More About Peters</a></i></b> 
+
+          </div>
+          <a class="claimButtonText" target="_blank" href="https://secure.actblue.com/donate/gary-peters-2?refcode=button">
+          <button class="claimButton">
+            <span>DONATE NOW</span>
+          </button>
+          </a>
+          <br /><br /><br />
+        </div>
+      </div>
+     
+    </div>
+     <div class="candidateBottomPadding"></div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Reach -->
+<div style="background-color: #EFEBE4;">
+  <div class="container" style="max-width: 1400px;">
+    <div class="leftGutter rightGutterMobile">
+      <div class="stickerPadding">
+        <div class="titleText">
+          Reach
+        </div>
+        <div class="descriptionText">
+          These races might be a stretch, but could flip under the right conditions. Besides, how sweet a victory would it be to unseat McConnell the grim reaper himself? 
+        </div>
+        <br /><br />
+      </div>
+
+      <div class="row mx-0">
+        <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+          <div class="stickerPadding">
+            <img src="/images/10_Al_Gross.jpg" srcset="/images/10_Al_Gross.jpg 1x, /images/10_Al_Gross@2x.jpg 2x" class="dumbImage"/>
+            <div class="candidateTitle">
+              Alaska: Dr. Al Gross
+            </div>
+            <div class="candidateText"> 
+              Alaska features the highest number of independent voters of any state. Gross is an independent candidate running for the Democratic party. He’s an orthopedic surgeon and commercial fisherman who cares about public health insurance and renewable energy.
+              <br /><br />
+
+              <b><i>Opponent: Dan Sullivan</b> <span style="padding-left:3px">(He’s not even from Alaska!)</span></i>
+
+
+              <br /><br />
+              <b><i><a class="candidateLink"  target="_blank" href="https://dralgrossak.com/">Learn More About Gross</a></i></b> 
+
+            </div>
+            <a class="claimButtonText" target="_blank" href="https://secure.actblue.com/donate/algross-2020?noskip=true&refcode=website">
+            <button class="claimButton">
+              <span>DONATE NOW</span>
+            </button>
+            </a>
+            <br /><br /><br />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+          <div class="stickerPadding">
+            <img src="/images/11_Raphael_Warnock.jpg" srcset="/images/11_Raphael_Warnock.jpg 1x, /images/11_Raphael_Warnock@2x.jpg 2x"  class="dumbImage"/>
+            <div class="candidateTitle">
+              Georgia (Special Election): Rev. Raphael Warnock
+            </div>
+            <div class="candidateText"> 
+              Candidates from all parties will compete on the same ballot, but if no one earns a majority of the vote, the special election will resume with a January 5 runoff between the top two candidates. Warnock is a progressive pastor of the Ebenezer Baptist Church, the former pulpit of Reverend Dr. Martin Luther King, Jr. and where Representative John Lewis, the civil-rights icon, was laid to rest. If he wins, he would be the first Black senator from Georgia, ever.
+              <br /><br />
+
+              <b><i>Opponent 1: Kelly Loeffler</b> <span style="padding-left:3px">(Her WNBA team would rather <a target="_blank" href="https://www.nytimes.com/2020/08/04/sports/basketball/wnba-dream-loeffler-warnock.html">Vote Warnock</a>)</span> </i>
+              <br />
+              <b><i>Opponent 2: Representative Doug Collins</b><span style="padding-left:3px">(Supports guns and opposes abortion)</span></i>
+              <br /><br />
+              <b><i><a target="_blank" class="candidateLink" href="https://warnockforgeorgia.com/">Learn More About Warnock</a></i></b> 
+
+            </div>
+            <a target="_blank" class="claimButtonText" href="https://secure.actblue.com/donate/warnock-for-georgia_web?refcode=website&amount=25">
+            <button class="claimButton">
+              <span>DONATE NOW</span>
+            </button>
+            </a>
+            <br /><br /><br />
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+          <div class="stickerPadding">
+            <img src="/images/12_Barbara_Bollier.jpg" srcset="/images/12_Barbara_Bollier.jpg 1x, /images/12_Barbara_Bollier@2x.jpg 2x"  class="dumbImage"/>
+
+            <div class="candidateTitle">
+             Kansas: Dr. Barbara Bollier
+           </div>
+           <div class="candidateText"> 
+            Dr. Bollier is a physician and former moderate Republican. She served in the Kansas House of Representatives and is currently a Kansas State Senator. If she wins she’d be the first Democratic senator in the state since 1939 — the party’s longest losing streak. She’s campaigning as a voice of moderation, but supports healthcare, ethics reform and seniors.
+
+            <br /><br />
+            <b><i>Opponent: Senator Roger Marshall</b> <span style="padding-left:3px">(Also a doctor, but uses hydroxychloroquine...)</span></i>
+            <br /><br />
+            <b><i><a target="_blank" class="candidateLink" href="https://bollierforkansas.com/">Learn More About Bollier</a></i></b> 
+
+
+          </div>
+          <a target="_blank" class="claimButtonText" href="https://secure.actblue.com/donate/bb4ks-web?refcode=sitemenu&amount=25">
+          <button class="claimButton">
+            <span>DONATE NOW</span>
+          </button>
+          </a>
+          <br /><br /><br />
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <img src="/images/13_Amy_McGrath.jpg" srcset="/images/13_Amy_McGrath.jpg 1x, /images/13_Amy_McGrath@2x.jpg 2x"  class="dumbImage"/>
+
+          <div class="candidateTitle">
+           Kentucky: Amy McGrath
+         </div>
+         <div class="candidateText"> 
+          This race is particularly symbolic (#DitchMitch anyone?) and one of the most expensive Senate races in 2020. McGrath is giving McConnell a literal run for his money, raking in millions and forcing him to step up his game. McGrath is a former Marine fighter pilot and the first woman in the Corps to fly a combat mission in an F/A-18. She served as a Congressional Fellow and a Marine Corps liaison in the Pentagon. 
+          <br /><br />
+          <b><i>Opponent: Senator Mitch McConnell</b> <span style="padding-left:3px">(Nope, just no)</span></i>
+          <br /><br />
+          <b><i><a target="_blank" class="candidateLink" href="https://amymcgrath.com/">Learn More About McGrath</a></i></b> 
+
+
+        </div>
+        <a target="_blank" class="claimButtonText" href="https://secure.actblue.com/donate/am-website?refcode=website-nav">
+        <button class="claimButton">
+          <span>DONATE NOW</span>
+        </button>
+        </a>
+        <br /><br /><br />
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <img src="/images/Mike_Espy@1x.jpg" srcset="/images/Mike_Espy@1x.jpg 1x, /images/Mike_Espy@2x.jpg 2x"  class="dumbImage"/>
+
+          <div class="candidateTitle">
+           Mississippi: Mike Espy
+         </div>
+         <div class="candidateText"> 
+          Mississippi is one of the reddest states in the nation, and has only voted for a Democratic president once. It’s also one of the cheapest media markets, so a small donation can go a long way. Espy was the first Black Congressman from MS since the Reconstruction Era and the first black Secretary of the US Department of Agriculture. He cares about agriculture, healthcare, education and the economy. Recent pollings have him one percentage point behind Hyde-Smith. 
+          <br /><br />
+          <b><i>Opponent: Cindy Hyde-Smith</b> <span style="padding-left:3px">(Jokes about <a target="_blank" href="https://mississippitoday.org/2018/11/11/cindy-hyde-smith-blasted-for-public-hanging-comments-she-calls-criticism-ridiculous/">public hangings</a>)
+</span></i>
+          <br /><br />
+          <b><i><a target="_blank" class="candidateLink" href="https://espyforsenate.com/">Learn More About Espy</a></i></b> 
+
+
+        </div>
+        <a target="_blank" class="claimButtonText" href="https://secure.actblue.com/donate/espy-ads-191112-launch-search-dd">
+        <button class="claimButton">
+          <span>DONATE NOW</span>
+        </button>
+        </a>
+        <br /><br /><br />
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+      <div class="stickerPadding">
+        <img src="/images/14_Jaime_Harrison.jpg" srcset="/images/14_Jaime_Harrison.jpg 1x, /images/14_Jaime_Harrison@2x.jpg 2x" class="dumbImage"/>
+        <div class="candidateTitle">
+         South Carolina: Jaime Harrison
+       </div>
+       <div class="candidateText"> 
+        No Democrat has won a Senate race in S.C. since 1998, but in recent polls, Harrison is close behind—even tied with—Senator Graham. Harrison is a former state senator, former chairman of the S.C. Democratic Party, and was aide to legendary Congressman James Clyburn. Much of his career has been devoted to enfranchising Black voters, and he cares deeply about affordable and accessible healthcare.
+
+        <br /><br />
+        <b><i>Opponent: Lindsey Graham</b> <span style="padding-left:3px">(Check out his <a target="_blank" href="https://www.nbcnews.com/video/sen-graham-defends-judge-kavanaugh-this-is-the-most-unethical-sham-since-i-ve-been-in-politics-1330976323809">Kavanaugh speech</a>)</span></i>
+        <br /><br />
+        <b><i><a target="_blank" class="candidateLink" href="https://jaimeharrison.com/">Learn More About Harrison</a></i></b> 
+
+
+      </div>
+      <a target="_blank" class="claimButtonText" href="https://secure.actblue.com/donate/ms_harrison_fr_homepage_2019?refcode=MS_HP_FR_X_X_homepage_X__F1_S1_C1__X&recurring=auto&amount=25">
+      <button class="claimButton">
+        <span>DONATE NOW</span>
+      </button>
+      </a>
+      <br /><br /><br />
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+    <div class="stickerPadding">
+      <img src="/images/15_MJ_Hegar.jpg" srcset="/images/15_MJ_Hegar.jpg 1x, /images/15_MJ_Hegar@2x.jpg 2x" class="dumbImage"/>
+      <div class="candidateTitle">
+       Texas: M.J. Hegar
+     </div>
+     <div class="candidateText"> 
+      Texas has been a Republican bastion for decades, but Democrats have gained ground. Hegar gained national attention in 2018 for a <a target="_blank" href="https://www.youtube.com/watch?v=Zi6v4CYNSIQ">powerful ad</a> highlighting her work breaking down barriers for women in the military. A combat veteran and search and rescue pilot in the US Air Force, Hegar received a Purple Heart for injuries she sustained in a search and rescue mission.
+      <br /><br />
+      <b><i>Opponent: John Cornyn</b>  <span style="padding-left:3px">(Former Senate Majority Whip)</span></i>
+      <br /><br />
+      <b><i><a target="_blank" class="candidateLink" href="https://mjfortexas.com/">Learn More About Hegar</a></i></b> 
+
+
+    </div>
+    <a class="claimButtonText" target="_blank" href="https://secure.actblue.com/donate/mjh_website?refcode=website-nav">
+    <button class="claimButton">
+      <span>DONATE NOW</span>
+    </button>
+    </a>
+    <br /><br /><br />
+  </div>
+  <div class="candidateBottomPadding"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container" style="max-width: 1400px;min-height: 450px">
+  <div class="leftGutter rightGutterMobile">
+    <div class="stickerPadding">
+      <div class="titleText">
+        Solidly Blue
+      </div>
+      <div class="descriptionText">
+      These candidates are not at any real risk of losing, but take the time to learn their names anyway.    </div>
+      <br /><br />
+    </div>
+
+    <div class="row mx-0">
+      <div class="col-lg-3 col-md-4 mx-0 px-lg-0 px-md-2">
+        <div class="stickerPadding">
+          <div class="safeText"> 
+            <a class="safeText" target="_blank" href="https://chriscoons.com/">DE, Christopher Coons</a>
+          </div>
+          <div class="safeText"> 
+           <a class="safeText" target="_blank" href="https://www.durbinforsenate.com/">IL, Dick Durbin</a>
+         </div>
+         <div class="safeText"> 
+          <a class="safeText" target="_blank" href="https://www.edmarkey.com/">MA, Ed Markey</a>
+        </div>
+        <div class="safeText"> 
+          <a class="safeText" target="_blank" href="https://tinaforminnesota.com/">MN, Tina Smith</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 mx-0 px-lg-0 px-md-2">
+      <div class="stickerPadding">
+        <div class="safeText"> 
+         <a class="safeText" target="_blank" href="https://jeanneshaheen.org/">NH, Jeanne Shaheen</a>
+       </div>
+       <div class="safeText"> 
+        <a class="safeText" target="_blank" href="https://corybooker.com/">NJ, Cory Booker</a>
+      </div>
+      <div class="safeText"> 
+        <a class="safeText" target="_blank" href="https://benraylujan.com/">NM, Ben Ray Luján</a>
+      </div>
+      <div class="safeText"> 
+        <a class="safeText" target="_blank" href="https://www.jeffmerkley.com/">OR, Jeff Merkley</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-4 mx-0 px-lg-0 px-md-2">
+    <div class="stickerPadding">
+      <div class="safeText"> 
+        <a class="safeText" target="_blank" href="https://www.jackreed.com/">RI, Jack Reed</a>
+      </div>
+      <div class="safeText"> 
+        <a class="safeText" target="_blank" href="https://markwarnerva.com/">VA, Mark Warner</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="mobilepadding"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div style="background-color: #EFEBE4;">
+  <div class="container" style="max-width: 1400px;min-height: 450px">
+    <div class="leftGutter rightGutterMobile">
+      <div class="stickerPadding">
+       <div class="row mx-0">
+         <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+          <div class="titleText">Full Team</div>
+          <div class="descriptionText">Not sure which candidate(s) to choose? Donate to Vote Save America's Get Mitch fund to strategically divide your contribution.
+          </div>
+          <a class="claimButtonText" target="_blank" href="https://secure.actblue.com/donate/getmitch">
+            <button class="claimButton">
+              <span>DONATE NOW</span>
+            </button>
+          </a>
+        </div>
+        <div class="col-lg-6 col-md-6 mx-0 px-lg-0 px-md-2">
+          <div class="mobilepadding"></div>
+          <img src="images/Full-team.png" srcset="/images/Full-team.png 1x, /images/Full-team@2x.png 2x" class="img-fluid"/>
+          <div class="mobilepadding"></div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div style="height:32px; background-color: #355ABC"></div>
+
+<div class="footer">
+  <div class="container" style="max-width: 1400px;">
+
+    <div class="row mx-0 gutterPadding">
+      <div class="stackMe col d-flex justify-content-between" style="margin-top: 80px;">
+        <div class="p-2 footerText"><a href="/aboutus.html" class="headerFont noUnder">ABOUT US</a></div>
+        <div class="p-2 footerText"><a href="/donate.html" class="headerFont noUnder">DONATE TO THE ART OF THE VOTE</a></div>
+        <div class="p-2 footerText"><a target="_blank" href="https://www.privacypolicies.com/live/96c11f36-2750-4f44-a6dc-871b1ea68bf1" class="headerFont noUnder">PRIVACY POLICY</a></div>
+        <div class="p-2 footerText"><a target="_blank" href="https://www.privacypolicies.com/live/0df7058d-1cdf-4f10-a3a6-c480a439cb3b" class="headerFont noUnder">TERMS OF SERVICES</a></div>
+      </div>
+    </div>
+    <div class="row mx-0 footer gutterPadding nonMobilePadding">
+      <div class="col">
+        <div class="footerText p-2" style="text-align: center;">CONTACT</div>
+        <br />
+        <div class="supportEmail" style="text-align: center;"><a href="mailto:support@theartofthevote.com" class="headerFont noUnder">support@theartofthevote.com</a></div>
+        <br />
+        <div style="text-align: center;"><a href="https://www.facebook.com/theartofthevote" target="_blank"><img src="images/Facebook@2x.png" width="24px;" /></a>
+        <div style="display:inline-block;width:10px;height:1px;"> </div>
+        <a href="https://www.instagram.com/theartofthevote/" target="_blank"><img src="images/Instagram@2x.png" width="24px;" /></a></div>
+        <br />
+        <br />
+        
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="discalimer">
+          A grassroots organization based in Chicago, Illinois. Not authorized by any candidate or candidate’s committee.
+        </div>
+      </div>
+      <div style="height:40px"></div>
+  </div>
+</div>
+
+
+<script src="js/scripts.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+</html>
