@@ -449,6 +449,9 @@ a.claimButtonText {
 
 @media (min-width: 768px) {
 
+	.kamalaPadding{
+		margin-bottom: 110px;
+	}
 	.desktopHidden{
 		display: none;
 	}
