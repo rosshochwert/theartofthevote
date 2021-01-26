@@ -187,8 +187,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("submit").addEventListener("click", function() {
         event.preventDefault();
-        document.getElementById("card-element").style.display = "block"
-        document.querySelector("#submit").disabled = true;
+/*        document.getElementById("card-element").style.display = "block"
+*/        document.querySelector("#submit").disabled = true;
         var plainInputsValid = true;
         var form = document.getElementById("payment-form");
         Array.prototype.forEach.call(form.querySelectorAll('input'), function(
