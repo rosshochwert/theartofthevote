@@ -25,7 +25,7 @@ function sendWelcomeEmail(email, name, donation) {
       personalizations: [
         {
           to: [{email: email}],
-          bcc: [{email: 'monika.pawar48@gmail.com'}]
+          bcc: [{email: 'monika.pawar48@gmail.com'}],
           dynamic_template_data: {
             "name": name
           }
