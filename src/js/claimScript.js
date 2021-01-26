@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function() {
         maxNetworkRetries: 2
     });
 
-    mountForm()
+    //mountForm()
 
     $('#file-upload').bind('change', function() { var fileName = ''; fileName = $(this).val().replace(/C:\\fakepath\\/i, ''); $('#file-selected').html(fileName); })
 
