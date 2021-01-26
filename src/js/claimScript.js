@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
-    document.getElementById("fiveDollar").addEventListener("click", function() {
+/*    document.getElementById("fiveDollar").addEventListener("click", function() {
         document.getElementById("fiveDollar").style.background = "#ED6F4E"
         document.getElementById("tenDollar").style.background = "none"
         document.getElementById("inputDollar").value = "5.00"
@@ -242,9 +242,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         withDonation = true;
 
-    })
+    })*/
 
-    document.getElementById("sorryMessedUp").addEventListener("click", function(event) {
+/*    document.getElementById("sorryMessedUp").addEventListener("click", function(event) {
         event.preventDefault()
         document.getElementById("optionalDonation").style.display = "none"
         document.getElementById("nothistimeButton").style.display = "none"
@@ -283,8 +283,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         $("#inputDollar").val(parseFloat($("#inputDollar").val()).toFixed(2));
     });
+*/
 
-
-    document.querySelector("#submit").disabled = true;
-
+/*    document.querySelector("#submit").disabled = true;
+*/
 });
