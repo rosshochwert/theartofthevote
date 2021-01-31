@@ -25,7 +25,6 @@ button:focus {
 
 
 
-
 a.claimButtonText {
 	color: #FFF;
 }
@@ -448,6 +447,14 @@ a.claimButtonText {
 }
 
 @media (min-width: 768px) {
+
+	.rightNew {
+		padding-right:32px 
+	}
+
+	.leftNew {
+		padding-left:32px 
+	}
 
 	.kamalaPadding{
 		margin-bottom: 110px;
